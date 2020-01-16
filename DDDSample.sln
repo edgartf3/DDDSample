@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{570017
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Domain.Venda", "DDDSample.Domain.Venda\DDDSample.Domain.Venda.csproj", "{94A3BD67-026E-40B1-BB7A-FB4DF220ED9C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applications.Services.Venda", "Applications.Services.Venda\Applications.Services.Venda.csproj", "{189FCBBF-D97F-44FA-8CBA-A7E3622529A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Services.Venda", "Applications.Services.Venda\DDDSample.Services.Venda.csproj", "{189FCBBF-D97F-44FA-8CBA-A7E3622529A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{AE627254-A15F-42B5-9BF1-570121529D15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{7E383A4D-A3FA-40B1-A993-719264AA8D7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Domain.Venda.Test", "DDDSample.Domain.Venda.Test\DDDSample.Domain.Venda.Test.csproj", "{A6D97FA4-ED69-4D47-90F9-0E4FE584540C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Domain.Venda.Test", "DDDSample.Domain.Venda.Test\DDDSample.Domain.Venda.Test.csproj", "{A6D97FA4-ED69-4D47-90F9-0E4FE584540C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1DA74C12-A0BD-40DE-A08D-E02D02BFBC3A}"
 EndProject
@@ -22,6 +22,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{D7D6F6CC-51BE-4C02-81E2-148B3BB75A8F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{B01ACCCF-501A-41EA-8AC8-E6A6CA1280EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Services.Test", "DDDSample.Services.Test\DDDSample.Services.Test.csproj", "{8061BFB2-838B-44B4-A830-A34B90ECDB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Framework.DataBase", "DDDSample.Framework.DataBase\DDDSample.Framework.DataBase.csproj", "{AD35461F-EFE5-4C6D-8561-4D74D37D671B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.WebApi.Venda", "DDDSample.WebApi.Venda\DDDSample.WebApi.Venda.csproj", "{CCA20565-B099-4413-87FF-26D5E1EAFF23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{A6D97FA4-ED69-4D47-90F9-0E4FE584540C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6D97FA4-ED69-4D47-90F9-0E4FE584540C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6D97FA4-ED69-4D47-90F9-0E4FE584540C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8061BFB2-838B-44B4-A830-A34B90ECDB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8061BFB2-838B-44B4-A830-A34B90ECDB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8061BFB2-838B-44B4-A830-A34B90ECDB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8061BFB2-838B-44B4-A830-A34B90ECDB87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD35461F-EFE5-4C6D-8561-4D74D37D671B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD35461F-EFE5-4C6D-8561-4D74D37D671B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD35461F-EFE5-4C6D-8561-4D74D37D671B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD35461F-EFE5-4C6D-8561-4D74D37D671B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA20565-B099-4413-87FF-26D5E1EAFF23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA20565-B099-4413-87FF-26D5E1EAFF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA20565-B099-4413-87FF-26D5E1EAFF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA20565-B099-4413-87FF-26D5E1EAFF23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +71,9 @@ Global
 		{1DA74C12-A0BD-40DE-A08D-E02D02BFBC3A} = {AE627254-A15F-42B5-9BF1-570121529D15}
 		{D7D6F6CC-51BE-4C02-81E2-148B3BB75A8F} = {0E4670C6-DD35-4A8D-8123-EB8C8A9DE155}
 		{B01ACCCF-501A-41EA-8AC8-E6A6CA1280EB} = {0E4670C6-DD35-4A8D-8123-EB8C8A9DE155}
+		{8061BFB2-838B-44B4-A830-A34B90ECDB87} = {1DA74C12-A0BD-40DE-A08D-E02D02BFBC3A}
+		{AD35461F-EFE5-4C6D-8561-4D74D37D671B} = {B01ACCCF-501A-41EA-8AC8-E6A6CA1280EB}
+		{CCA20565-B099-4413-87FF-26D5E1EAFF23} = {D7D6F6CC-51BE-4C02-81E2-148B3BB75A8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90AA4AD6-B70D-4893-8CBB-4430C035CE8A}

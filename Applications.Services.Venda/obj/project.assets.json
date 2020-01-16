@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "DDDSample.Domain.Venda/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
+        }
+      },
+      "DDDSample.Framework.DataBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Venda": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDSample.Framework.DataBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Framework.DataBase.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DDDSample.Domain.Venda/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
+      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj"
+    },
+    "DDDSample.Framework.DataBase/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Framework.DataBase/DDDSample.Framework.DataBase.csproj",
+      "msbuildProject": "../DDDSample.Framework.DataBase/DDDSample.Framework.DataBase.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "DDDSample.Domain.Venda >= 1.0.0",
+      "DDDSample.Framework.DataBase >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Edgar\\.nuget\\packages\\": {},
@@ -15,9 +53,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\Applications.Services.Venda.csproj",
-      "projectName": "Applications.Services.Venda",
-      "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\Applications.Services.Venda.csproj",
+      "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\DDDSample.Services.Venda.csproj",
+      "projectName": "DDDSample.Services.Venda",
+      "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\DDDSample.Services.Venda.csproj",
       "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
       "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\obj\\",
       "projectStyle": "PackageReference",
@@ -39,7 +77,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+            },
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

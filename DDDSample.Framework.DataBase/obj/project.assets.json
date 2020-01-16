@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DDDSample.Domain.Venda/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DDDSample.Domain.Venda/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
+      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "DDDSample.Domain.Venda >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Edgar\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
+      "projectName": "DDDSample.Framework.DataBase",
+      "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
+      "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
+      "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

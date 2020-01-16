@@ -1,0 +1,11 @@
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.deps.json
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.csprojAssemblyReference.cache
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.AssemblyInfoInputs.cache
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.AssemblyInfo.cs
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.csproj.CopyComplete
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb

@@ -7,12 +7,25 @@ namespace DDDSample.Domain.Venda.Entities
 {
     public class Produto: EntidadeBase, IProduto
     {
+        private double preco = 0.00;
         public string Descricao { get; set; }
-        public double Preco { get; set; }
+        public double Preco
+        {
+            get
+            {
+                return preco;
+            }
+            set
+            {
+                if (value <= 0) throw new Exception("O preço deve ser maior que zero");
+                this.preco = value;
+            }
+        }
 
         public override bool IsValid()
         {
-            return true;
+            return ((this.Preco > 0) && (this.Descricao != ""));
+            
         }
     }
 }

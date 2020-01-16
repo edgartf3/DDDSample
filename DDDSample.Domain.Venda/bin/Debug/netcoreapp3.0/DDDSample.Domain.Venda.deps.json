@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DDDSample.Domain.Venda/1.0.0": {
+        "runtime": {
+          "DDDSample.Domain.Venda.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DDDSample.Domain.Venda/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
