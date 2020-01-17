@@ -6,6 +6,7 @@ namespace DDDSample.Domain.Venda.Interfaces
 {
     public interface IEntidadeBase
     {
-        bool IsValid();
+        Guid Id { get; set; }
+        DateTime CriadoEm { get; set; }
     }
 }

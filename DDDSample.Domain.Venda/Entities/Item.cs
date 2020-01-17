@@ -14,9 +14,9 @@ namespace DDDSample.Domain.Venda.Entities
         public double ValorDesconto { get; set; }
         public double Total { get; set; }
 
-        public override bool IsValid()
-        {
-            return true;
-        }
+        //public override bool IsValid()
+        //{
+        //    return true;
+        //}
     }
 }

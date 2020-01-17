@@ -5,9 +5,9 @@ using System.Text;
 
 namespace DDDSample.Domain.Venda.Entities
 {
-    public class Produto: EntidadeBase, IProduto
+    public class Produto : EntidadeBase, IProduto
     {
-        private double preco = 0.00;
+        private double preco = 0.00;        
         public string Descricao { get; set; }
         public double Preco
         {
@@ -22,10 +22,10 @@ namespace DDDSample.Domain.Venda.Entities
             }
         }
 
-        public override bool IsValid()
+        public bool IsValid()
         {
             return ((this.Preco > 0) && (this.Descricao != ""));
-            
         }
+        
     }
 }

@@ -15,10 +15,10 @@ namespace DDDSample.Domain.Venda.Entities
         public double ValorTotal { get; set; }
         public List<IItem> Itens { get; set; }
         public IEndereco Entrega { get; set; }
-        public override bool IsValid()
-        {                
-            return true;
-        }
+        //public override bool IsValid()
+        //{                
+        //    return true;
+        //}
 
     }
 }

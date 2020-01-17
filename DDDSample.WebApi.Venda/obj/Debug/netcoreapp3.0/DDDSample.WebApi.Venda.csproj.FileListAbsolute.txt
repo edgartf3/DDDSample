@@ -2,6 +2,7 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.exe
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.csprojAssemblyReference.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\staticwebassets\DDDSample.WebApi.Venda.StaticWebAssets.Manifest.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\staticwebassets\DDDSample.WebApi.Venda.StaticWebAssets.xml
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.AssemblyInfoInputs.cache
@@ -80,7 +81,6 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.csprojAssemblyReference.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.csproj.CopyComplete
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
@@ -108,3 +108,15 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.MvcApplicationPartsAssemblyInfo.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\obj\Debug\netcoreapp3.0\DDDSample.WebApi.Venda.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Services.Venda.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Services.Venda.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb

@@ -12,9 +12,9 @@ namespace DDDSample.Domain.Venda.Entities
         
         public IEndereco Faturamento { get; set; }
 
-        public override bool IsValid()
-        {
-            return true;            
-        }
+        //public override bool IsValid()
+        //{
+        //    return true;            
+        //}
     }
 }

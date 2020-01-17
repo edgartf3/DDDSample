@@ -5,11 +5,9 @@ using System.Text;
 
 namespace DDDSample.Domain.Venda.Entities
 {
-    public abstract class EntidadeBase: IEntidadeBase
+    public class EntidadeBase: IEntidadeBase
     {
         public Guid Id { get; set; }
-        public DateTime CriadoEm { get; set; }
-
-        public abstract bool IsValid();
+        public DateTime CriadoEm { get; set; }        
     }
 }

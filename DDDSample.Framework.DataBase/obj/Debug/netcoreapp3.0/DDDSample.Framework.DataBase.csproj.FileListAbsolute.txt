@@ -9,3 +9,5 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcore
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.csproj.CopyComplete
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.runtimeconfig.json
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.runtimeconfig.dev.json
