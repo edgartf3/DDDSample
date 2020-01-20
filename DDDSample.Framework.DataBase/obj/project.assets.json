@@ -1295,9 +1295,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DDDSample.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.Core.dll": {}
+        }
+      },
       "DDDSample.Domain.Venda/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DDDSample.Domain.Venda.dll": {}
         },
@@ -4984,6 +4997,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "DDDSample.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj",
+      "msbuildProject": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj"
     },
     "DDDSample.Domain.Venda/1.0.0": {
       "type": "project",

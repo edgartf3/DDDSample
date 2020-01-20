@@ -1,6 +1,7 @@
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.pdb
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\nunit.engine.netstandard.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\nunit.engine.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\nunit.engine.api.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Services.Test.deps.json
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Services.Test.runtimeconfig.json
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Services.Test.runtimeconfig.dev.json
@@ -17,6 +18,7 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\testhost.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\NuGet.Frameworks.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\nunit.framework.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\System.Xml.XPath.XmlDocument.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -92,7 +94,5 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.csproj.CopyComplete
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.pdb
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Services.Venda.dll
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Services.Venda.pdb
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb

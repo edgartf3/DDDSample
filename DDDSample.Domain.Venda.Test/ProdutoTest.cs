@@ -1,4 +1,6 @@
+using DDDSample.Domain.Core;
 using DDDSample.Domain.Venda.Entities;
+using DDDSample.Framework.DataBase;
 using NUnit.Framework;
 
 namespace DDDSample.Domain.Venda.Test
@@ -11,8 +13,16 @@ namespace DDDSample.Domain.Venda.Test
         }
 
         [Test]
-        public void IsValid()
+        public void Service()
         {
+            var repository = new BaseRepository<Produto>();
+            var service = new BaseService<Produto>(repository);
+            service.Create(new Produto());
+        }
+
+        [Test]
+        public void IsValid()
+        {            
             var produto = new Produto();
             produto.Descricao = "Descricao";
             produto.Preco = 1.78;

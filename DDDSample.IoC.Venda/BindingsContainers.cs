@@ -1,12 +1,9 @@
-﻿using Applications.Services.Venda;
+﻿using DDDSample.Domain.Core;
+using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Venda.Entities;
-using DDDSample.Domain.Venda.Interfaces;
-using DDDSample.Framework.DataBase.Interfaces;
-using DDDSample.Framework.DataBase.Repositories;
-using DDDSample.Services.Venda.Interfaces;
+using DDDSample.Framework.DataBase;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace DDDSample.IoC.Venda
 {
@@ -14,9 +11,12 @@ namespace DDDSample.IoC.Venda
     {
         public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IProdutoService, ProdutoService>();
-            services.AddScoped<IProduto, Produto>();
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IBaseService<Produto>, BaseService<Produto>>();
+            services.AddScoped<IBaseRepository<Produto>, BaseRepository<Produto>>();
+
+            services.AddScoped<IBaseService<Cliente>, BaseService<Cliente>>();
+            services.AddScoped<IBaseRepository<Cliente>, BaseRepository<Cliente>>();
+
         }
     }
 }

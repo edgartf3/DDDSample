@@ -1267,9 +1267,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DDDSample.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.Core.dll": {}
+        }
+      },
       "DDDSample.Domain.Venda/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DDDSample.Domain.Venda.dll": {}
         },
@@ -1289,20 +1302,6 @@
         },
         "runtime": {
           "bin/placeholder/DDDSample.Framework.DataBase.dll": {}
-        }
-      },
-      "DDDSample.Services.Venda/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "DDDSample.Domain.Venda": "1.0.0",
-          "DDDSample.Framework.DataBase": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DDDSample.Services.Venda.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DDDSample.Services.Venda.dll": {}
         }
       }
     }
@@ -4944,6 +4943,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "DDDSample.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj",
+      "msbuildProject": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj"
+    },
     "DDDSample.Domain.Venda/1.0.0": {
       "type": "project",
       "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
@@ -4953,16 +4957,13 @@
       "type": "project",
       "path": "../DDDSample.Framework.DataBase/DDDSample.Framework.DataBase.csproj",
       "msbuildProject": "../DDDSample.Framework.DataBase/DDDSample.Framework.DataBase.csproj"
-    },
-    "DDDSample.Services.Venda/1.0.0": {
-      "type": "project",
-      "path": "../Applications.Services.Venda/DDDSample.Services.Venda.csproj",
-      "msbuildProject": "../Applications.Services.Venda/DDDSample.Services.Venda.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "DDDSample.Services.Venda >= 1.0.0",
+      "DDDSample.Domain.Core >= 1.0.0",
+      "DDDSample.Domain.Venda >= 1.0.0",
+      "DDDSample.Framework.DataBase >= 1.0.0",
       "Microsoft.Extensions.Configuration.Abstractions >= 3.1.1",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 3.1.1"
     ]
@@ -5000,8 +5001,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\DDDSample.Services.Venda.csproj": {
-              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\Applications.Services.Venda\\DDDSample.Services.Venda.csproj"
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+            },
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+            },
+            "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
             }
           }
         }

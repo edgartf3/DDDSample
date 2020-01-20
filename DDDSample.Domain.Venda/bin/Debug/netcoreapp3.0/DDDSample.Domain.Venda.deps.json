@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.0": {
       "DDDSample.Domain.Venda/1.0.0": {
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "DDDSample.Domain.Venda.dll": {}
+        }
+      },
+      "DDDSample.Domain.Core/1.0.0": {
+        "runtime": {
+          "DDDSample.Domain.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DDDSample.Domain.Venda/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DDDSample.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -887,7 +887,15 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "DDDSample.Domain.Core/1.0.0": {
+        "runtime": {
+          "DDDSample.Domain.Core.dll": {}
+        }
+      },
       "DDDSample.Domain.Venda/1.0.0": {
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "DDDSample.Domain.Venda.dll": {}
         }
@@ -1522,6 +1530,11 @@
       "sha512": "sha512-VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "DDDSample.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DDDSample.Domain.Venda/1.0.0": {
       "type": "project",

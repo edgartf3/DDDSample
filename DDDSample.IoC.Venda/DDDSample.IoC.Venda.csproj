@@ -10,7 +10,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Applications.Services.Venda\DDDSample.Services.Venda.csproj" />
+    <ProjectReference Include="..\DDDSample.Domain.Core\DDDSample.Domain.Core.csproj" />
+    <ProjectReference Include="..\DDDSample.Domain.Venda\DDDSample.Domain.Venda.csproj" />
+    <ProjectReference Include="..\DDDSample.Framework.DataBase\DDDSample.Framework.DataBase.csproj" />
   </ItemGroup>
 
 </Project>
