@@ -10,7 +10,7 @@ namespace DDDSample.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClienteController : BaseController<Cliente>
+    public class PessoaController : BaseController<Pessoa>
     {
     }
 }

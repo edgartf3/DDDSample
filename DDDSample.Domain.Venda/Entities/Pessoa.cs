@@ -6,12 +6,12 @@ using System.Text;
 
 namespace DDDSample.Domain.Venda.Entities
 {
-    public class Cliente: EntidadeBase
+    public class Pessoa: EntidadeBase
     {        
 
         public string Nome { get; set; }
-        
-        public IEndereco Faturamento { get; set; }
+
+        public Endereco Endereco { get; set; }        
 
     }
 }
