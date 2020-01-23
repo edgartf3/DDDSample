@@ -46,7 +46,9 @@ namespace DDDSample.Framework.DataBase
             //e o tipo de entidade. Retorna nulo se nenhum tipo de entidade correspondente for encontrado.
 
             foreach (var property in _context.Model.FindEntityType(typeof(T)).GetNavigations())
-                query = query.Include(property.Name).AsNoTracking();
+                query = query.Include(property.Name)
+                    
+                    .AsNoTracking();
 
             return query.Where(a => a.Id == id).FirstOrDefault();
         }

@@ -15,7 +15,7 @@ namespace DDDSample.Domain.Venda.Entities
 
         public Endereco Endereco { get; set; }    
         
-        public Produto Produto { get; set; }
+        
 
     }
 }
