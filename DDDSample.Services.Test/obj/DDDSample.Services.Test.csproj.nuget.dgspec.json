@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj": {}
+    "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj": {}
   },
   "projects": {
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+    "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
         "projectName": "DDDSample.Domain.Core",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
+        "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -50,44 +52,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+    "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
+        "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
         "projectName": "DDDSample.Domain.Venda",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
+        "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
+        "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -99,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
-                "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+              "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+                "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
               }
             }
           }
@@ -123,44 +113,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj": {
+    "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj",
+        "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj",
         "projectName": "DDDSample.Services.Test",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\obj\\",
+        "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\DDDSample.Services.Test.csproj",
+        "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Services.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -172,8 +150,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
-                "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+              "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+                "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
               }
             }
           }
@@ -212,26 +190,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

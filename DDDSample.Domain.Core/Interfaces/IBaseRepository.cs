@@ -5,13 +5,13 @@ using System.Text;
 
 namespace DDDSample.Domain.Core.Interfaces
 {
-    public interface IBaseRepository<T> where T : EntidadeBase
+    public interface IBaseRepository<TEntity> where TEntity : EntidadeBase
     {
-        void Create(T model);
-        void Update(T model);
-        void Delete(T model);
+        void Create(TEntity model);
+        void Update(TEntity model);
+        void Delete(TEntity model);
         void Delete(Guid id);
-        T Get(Guid id);
-        IEnumerable<T> GetAll();
+        TEntity Get(Guid id);
+        IEnumerable<TEntity> GetAll();
     }
 }
