@@ -9,3 +9,14 @@ C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.csprojAssemblyReference.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.csproj.CopyComplete
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.deps.json
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.csprojAssemblyReference.cache
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.AssemblyInfoInputs.cache
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.AssemblyInfo.cs
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.csproj.CopyComplete
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Venda\obj\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb

@@ -17,4 +17,6 @@
     <ProjectReference Include="..\DDDSample.IoC.Venda\DDDSample.IoC.Venda.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 </Project>

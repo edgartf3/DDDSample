@@ -39,12 +39,31 @@ namespace DDDSample.Framework.DataBase
 
         public T Get(Guid id)
         {
-            return _dbSet.Where(a => a.Id == id).FirstOrDefault();
+            //Queryable não é executado no banco de dados imediatamente, entrada.
+            var query = _dbSet.AsQueryable();
+
+            //EntityType Obtém o tipo de entidade para o nome fornecido, definindo o nome da navegação 
+            //e o tipo de entidade. Retorna nulo se nenhum tipo de entidade correspondente for encontrado.
+
+            foreach (var property in _context.Model.FindEntityType(typeof(T)).GetNavigations())
+                query = query.Include(property.Name).AsNoTracking();
+
+            return query.Where(a => a.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<T> GetAll()
+
         {
-            return _dbSet.ToArray();
+            //Queryable não é executado no banco de dados imediatamente, entrada.
+            var query = _dbSet.AsQueryable();
+
+            //EntityType Obtém o tipo de entidade para o nome fornecido, definindo o nome da navegação 
+            //e o tipo de entidade. Retorna nulo se nenhum tipo de entidade correspondente for encontrado.
+
+            foreach (var property in _context.Model.FindEntityType(typeof(T)).GetNavigations())
+                 query = query.Include(property.Name).AsNoTracking();
+
+            return query;
         }
 
         public void Update(T model)

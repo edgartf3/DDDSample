@@ -12,6 +12,6 @@ namespace DDDSample.Domain.Core.Entities
             this.CriadoEm = DateTime.Now;
         }
         public Guid Id { get; set; }
-        public DateTime CriadoEm { get; set; }        
+        public DateTime CriadoEm { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace DDDSample.IoC
         public static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<SampleDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("SampleConnection")));
-
+            services.AddScoped<SampleDBContext, SampleDBContext>(); //Assim que acabar a requisão, acabar com a conexão com o banco de Dados
             services.AddScoped<IBaseService<Produto>, BaseService<Produto>>();
             services.AddScoped<IBaseRepository<Produto>, BaseRepository<Produto>>();
 

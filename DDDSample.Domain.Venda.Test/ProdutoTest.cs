@@ -15,9 +15,9 @@ namespace DDDSample.Domain.Venda.Test
         [Test]
         public void Service()
         {
-            var repository = new BaseRepository<Produto>();
-            var service = new BaseService<Produto>(repository);
-            service.Create(new Produto());
+            // repository = new BaseRepository<Produto>();
+            //var service = new BaseService<Produto>(repository);
+            //service.Create(new Produto());
         }
 
         [Test]

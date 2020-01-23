@@ -99,6 +99,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Cpf_CNPJ")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CriadoEm")
                         .HasColumnType("datetime2");
 
@@ -108,9 +111,14 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("ProdutoId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.HasIndex("EnderecoId");
+
+                    b.HasIndex("ProdutoId");
 
                     b.ToTable("Pessoas");
                 });
@@ -190,6 +198,10 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Endereco", "Endereco")
                         .WithMany()
                         .HasForeignKey("EnderecoId");
+
+                    b.HasOne("DDDSample.Domain.Venda.Entities.Produto", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>
