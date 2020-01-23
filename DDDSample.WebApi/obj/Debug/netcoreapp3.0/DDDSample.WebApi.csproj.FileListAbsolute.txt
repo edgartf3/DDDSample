@@ -269,3 +269,4 @@ C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Debug.dll
