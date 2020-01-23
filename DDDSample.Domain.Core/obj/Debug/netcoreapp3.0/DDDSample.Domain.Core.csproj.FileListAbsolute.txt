@@ -13,3 +13,4 @@ C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcorea
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfo.cs
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
 C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+C:\Sistemas\TRDEV\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.csprojAssemblyReference.cache
