@@ -45,6 +45,7 @@ namespace DDDSample.Framework.DataBase
             //EntityType Obtém o tipo de entidade para o nome fornecido, definindo o nome da navegação 
             //e o tipo de entidade. Retorna nulo se nenhum tipo de entidade correspondente for encontrado.
 
+            //AsNoTracking usar semper que for buscar algo - leitura rapida no banco de dados.
             foreach (var property in _context.Model.FindEntityType(typeof(TEntity)).GetNavigations())
                 query = query.Include(property.Name).AsNoTracking();
 
