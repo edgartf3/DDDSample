@@ -54,6 +54,23 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Endereco");
                 });
 
+            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Fabricante", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Fabricantes");
+                });
+
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Item", b =>
                 {
                     b.Property<Guid>("Id")
@@ -130,10 +147,15 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("FabricanteId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<double>("Preco")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FabricanteId");
 
                     b.ToTable("Produtos");
                 });
@@ -193,6 +215,13 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Endereco", "Endereco")
                         .WithMany()
                         .HasForeignKey("EnderecoId");
+                });
+
+            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Produto", b =>
+                {
+                    b.HasOne("DDDSample.Domain.Venda.Entities.Fabricante", "Fabricante")
+                        .WithMany()
+                        .HasForeignKey("FabricanteId");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>

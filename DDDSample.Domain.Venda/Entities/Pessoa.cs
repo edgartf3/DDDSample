@@ -12,7 +12,7 @@ namespace DDDSample.Domain.Venda.Entities
 
         public string Nome { get; set; }
         public string Cpf_CNPJ { get; set; }
-
+        public Guid EnderecoId { get; set; }
         public Endereco Endereco { get; set; }    
         
         

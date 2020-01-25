@@ -27,6 +27,9 @@ namespace DDDSample.IoC
             services.AddScoped<IBaseService<Item>, BaseService<Item>>();
             services.AddScoped<IBaseRepository<Item>, BaseRepository<Item, SampleDBContext>>();
 
+            services.AddScoped<IBaseService<Fabricante>, BaseService<Fabricante>>();
+            services.AddScoped<IBaseRepository<Fabricante>, BaseRepository<Fabricante, SampleDBContext>>();
+
         }
     }
 }
