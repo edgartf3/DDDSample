@@ -32,10 +32,8 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\D
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
-D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
-D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csprojAssemblyReference.cache
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.AssemblyInfoInputs.cache
@@ -43,3 +41,5 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\D
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csproj.CopyComplete
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.dll
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.pdb

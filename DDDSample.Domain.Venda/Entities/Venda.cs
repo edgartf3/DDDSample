@@ -10,7 +10,7 @@ namespace DDDSample.Domain.Venda.Entities
     {
         public Venda()
         {
-            this.Itens = new List<Item>();
+            this.Itens = new HashSet<Item>();
         }
         public int Numero { get; set; }
         public DateTime Data { get; set; }                
@@ -18,7 +18,7 @@ namespace DDDSample.Domain.Venda.Entities
         public double ValorMercadoria { get; set; }
         public double ValorDesconto { get; set; }
         public double ValorTotal { get; set; }
-        public List<Item> Itens { get; set; }
+        public ICollection<Item> Itens { get; set; }
 
         public Endereco Entrega { get; set; }
 

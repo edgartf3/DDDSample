@@ -51,8 +51,8 @@ namespace DDDSample.Repositories.Test
         public void Update()
         {            
             var produto = repository.Get(Guid.Parse("D875D491-1116-4A0E-A8BB-65CBBB53BF24"));
-            produto.Descricao = "KKK";
-            //produto.Preco = 4.5;
+            produto.Descricao = "Mouse";
+            produto.Preco = 67.90;
             repository.Update(produto);
            
 

@@ -2154,6 +2154,17 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "DDDSample.Domain/1.0.0": {
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "DDDSample.Domain.dll": {}
+        },
+        "compile": {
+          "DDDSample.Domain.dll": {}
+        }
+      },
       "DDDSample.Domain.Core/1.0.0": {
         "runtime": {
           "DDDSample.Domain.Core.dll": {}
@@ -2162,20 +2173,9 @@
           "DDDSample.Domain.Core.dll": {}
         }
       },
-      "DDDSample.Domain.Venda/1.0.0": {
-        "dependencies": {
-          "DDDSample.Domain.Core": "1.0.0"
-        },
-        "runtime": {
-          "DDDSample.Domain.Venda.dll": {}
-        },
-        "compile": {
-          "DDDSample.Domain.Venda.dll": {}
-        }
-      },
       "DDDSample.Framework.DataBase/1.0.0": {
         "dependencies": {
-          "DDDSample.Domain.Venda": "1.0.0",
+          "DDDSample.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "runtime": {
@@ -2187,8 +2187,8 @@
       },
       "DDDSample.IoC.Venda/1.0.0": {
         "dependencies": {
+          "DDDSample.Domain": "1.0.0",
           "DDDSample.Domain.Core": "1.0.0",
-          "DDDSample.Domain.Venda": "1.0.0",
           "DDDSample.Framework.DataBase": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
@@ -4882,12 +4882,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "DDDSample.Domain.Core/1.0.0": {
+    "DDDSample.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DDDSample.Domain.Venda/1.0.0": {
+    "DDDSample.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

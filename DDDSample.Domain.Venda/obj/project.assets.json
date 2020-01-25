@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
-      "projectName": "DDDSample.Domain.Venda",
-      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
+      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
+      "projectName": "DDDSample.Domain",
+      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
       "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
       "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
       "projectStyle": "PackageReference",

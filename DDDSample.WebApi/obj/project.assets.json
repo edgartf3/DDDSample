@@ -830,6 +830,15 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "RestSharp/106.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2527,6 +2536,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DDDSample.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        }
+      },
       "DDDSample.Domain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -2537,24 +2559,11 @@
           "bin/placeholder/DDDSample.Domain.Core.dll": {}
         }
       },
-      "DDDSample.Domain.Venda/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "DDDSample.Domain.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
-        }
-      },
       "DDDSample.Framework.DataBase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "DDDSample.Domain.Venda": "1.0.0",
+          "DDDSample.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "compile": {
@@ -2568,8 +2577,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
+          "DDDSample.Domain": "1.0.0",
           "DDDSample.Domain.Core": "1.0.0",
-          "DDDSample.Domain.Venda": "1.0.0",
           "DDDSample.Framework.DataBase": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
@@ -3872,6 +3881,21 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "RestSharp/106.10.1": {
+      "sha512": "MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "type": "package",
+      "path": "restsharp/106.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.10.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8185,15 +8209,15 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "DDDSample.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj",
+      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj"
+    },
     "DDDSample.Domain.Core/1.0.0": {
       "type": "project",
       "path": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj",
       "msbuildProject": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj"
-    },
-    "DDDSample.Domain.Venda/1.0.0": {
-      "type": "project",
-      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
-      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj"
     },
     "DDDSample.Framework.DataBase/1.0.0": {
       "type": "project",
@@ -8211,7 +8235,8 @@
       "DDDSample.IoC.Venda >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1",
       "Microsoft.Extensions.Logging.Debug >= 3.1.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
+      "RestSharp >= 106.10.1"
     ]
   },
   "packageFolders": {
@@ -8268,6 +8293,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.0.0, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.10.1, )"
           }
         },
         "imports": [

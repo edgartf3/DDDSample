@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5700174C-9A0B-4628-AC5B-952D9A1B87D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Domain.Venda", "DDDSample.Domain.Venda\DDDSample.Domain.Venda.csproj", "{94A3BD67-026E-40B1-BB7A-FB4DF220ED9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Domain", "DDDSample.Domain.Venda\DDDSample.Domain.csproj", "{94A3BD67-026E-40B1-BB7A-FB4DF220ED9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{AE627254-A15F-42B5-9BF1-570121529D15}"
 EndProject
@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.WebApi", "DDDSamp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{4D0865D0-B239-44F8-BEC5-EDDC0BE3176D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Repositories.Test", "DDDSample.Repositories.Test\DDDSample.Repositories.Test.csproj", "{1A51DB9A-6345-49C8-9D34-DE556467F329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Repositories.Test", "DDDSample.Repositories.Test\DDDSample.Repositories.Test.csproj", "{1A51DB9A-6345-49C8-9D34-DE556467F329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

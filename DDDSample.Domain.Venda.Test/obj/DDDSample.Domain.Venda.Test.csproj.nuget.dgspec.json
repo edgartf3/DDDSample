@@ -93,8 +93,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
-                "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+              "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
               },
               "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
                 "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
@@ -159,12 +159,12 @@
         }
       }
     },
-    "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+    "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
-        "projectName": "DDDSample.Domain.Venda",
-        "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
+        "projectName": "DDDSample.Domain",
+        "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
         "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
         "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
         "projectStyle": "PackageReference",
@@ -252,8 +252,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
-                "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+              "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
               }
             }
           }

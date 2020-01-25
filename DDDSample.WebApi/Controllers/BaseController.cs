@@ -6,6 +6,7 @@ using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RestSharp;
 
 namespace DDDSample.WebApi.Controllers
 {
@@ -80,6 +81,10 @@ namespace DDDSample.WebApi.Controllers
             var tsc = new TaskCompletionSource<IActionResult>();
             try
             {
+                //T obj = service.Get(entity.TryGetValue("Id"));
+
+
+
                 service.Update(entity);
                 tsc.SetResult(CreateResponse("OK", 200));
             }

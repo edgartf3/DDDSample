@@ -1295,6 +1295,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DDDSample.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        }
+      },
       "DDDSample.Domain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -1303,19 +1316,6 @@
         },
         "runtime": {
           "bin/placeholder/DDDSample.Domain.Core.dll": {}
-        }
-      },
-      "DDDSample.Domain.Venda/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "DDDSample.Domain.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
         }
       }
     }
@@ -4998,20 +4998,20 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "DDDSample.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj",
+      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj"
+    },
     "DDDSample.Domain.Core/1.0.0": {
       "type": "project",
       "path": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj",
       "msbuildProject": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj"
-    },
-    "DDDSample.Domain.Venda/1.0.0": {
-      "type": "project",
-      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
-      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "DDDSample.Domain.Venda >= 1.0.0",
+      "DDDSample.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.1"
     ]
@@ -5042,8 +5042,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
-              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
             }
           }
         }

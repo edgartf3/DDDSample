@@ -86,13 +86,15 @@ namespace DDDSample.Framework.DataBase
 
         public void Update(TEntity model)
         {
-            // Here model is model return from form on post
-            var oldobj = _dbSet.Where(x => x.Id == model.Id).SingleOrDefault();
+            _dbSet.Update(model);
+           
+            //// Here model is model return from form on post
+            //var oldobj = _dbSet.Where(x => x.Id == model.Id).SingleOrDefault();
 
-            // Newly Inserted Code
-            var UpdatedObj = CheckUpdateObject(oldobj, model);
+            //// Newly Inserted Code
+            //var UpdatedObj = CheckUpdateObject(oldobj, model);
 
-            _context.Entry(oldobj).CurrentValues.SetValues(UpdatedObj);
+            //_context.Entry(oldobj).CurrentValues.SetValues(UpdatedObj);
             _context.SaveChangesAsync().Wait();
         }
     }

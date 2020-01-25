@@ -34,8 +34,6 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcor
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
-D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
-D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.csprojAssemblyReference.cache
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.AssemblyInfoInputs.cache
@@ -43,3 +41,5 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcor
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.csproj.CopyComplete
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\obj\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
+D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.dll
+D:\Sistemas\Laboratório\DDDSample\DDDSample.Framework.DataBase\bin\Debug\netcoreapp3.0\DDDSample.Domain.pdb
