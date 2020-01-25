@@ -6916,23 +6916,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
       "projectName": "DDDSample.Repositories.Test",
-      "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
+      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6945,8 +6941,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
-              "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
             }
           }
         }
@@ -7002,7 +6998,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

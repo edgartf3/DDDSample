@@ -46,15 +46,10 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Numero")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ProdutoId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("UF")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProdutoId");
 
                     b.ToTable("Endereco");
                 });
@@ -180,13 +175,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasIndex("EntregaId");
 
                     b.ToTable("Vendas");
-                });
-
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Endereco", b =>
-                {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Item", b =>
