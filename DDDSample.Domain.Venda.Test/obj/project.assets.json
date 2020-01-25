@@ -3581,6 +3581,7 @@
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3619,6 +3620,7 @@
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6564,6 +6566,7 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6730,12 +6733,17 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\mathe\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
+>>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda.Test\\DDDSample.Domain.Venda.Test.csproj",
       "projectName": "DDDSample.Domain.Venda.Test",
       "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda.Test\\DDDSample.Domain.Venda.Test.csproj",
@@ -6747,6 +6755,16 @@
       ],
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda.Test\\DDDSample.Domain.Venda.Test.csproj",
+      "projectName": "DDDSample.Domain.Venda.Test",
+      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda.Test\\DDDSample.Domain.Venda.Test.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda.Test\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6759,11 +6777,19 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
               "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
             },
             "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
               "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+=======
+            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+            },
+            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+>>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
             }
           }
         }
@@ -6821,7 +6847,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
       }
     }
   }
