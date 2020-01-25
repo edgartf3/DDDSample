@@ -8,27 +8,20 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Edgar\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
       "projectName": "DDDSample.Domain.Core",
-      "projectPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
-      "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
+      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -60,12 +53,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

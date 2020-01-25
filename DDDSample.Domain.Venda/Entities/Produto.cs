@@ -10,6 +10,7 @@ namespace DDDSample.Domain.Venda.Entities
     {              
         public string Descricao { get; set; }
         public double Preco { get; set; }
+        public Fabricante Fabricante { get; set; }
 
         public bool IsValid()
         {            
