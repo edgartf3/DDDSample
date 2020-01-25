@@ -1,7 +1,6 @@
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.deps.json
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
-C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.csprojAssemblyReference.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfoInputs.cache
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfo.cs
 C:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll

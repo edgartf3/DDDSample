@@ -69,7 +69,8 @@ namespace DDDSample.Framework.DataBase
 
         public void Update(TEntity model)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(model);
+            _context.SaveChanges();
         }
     }
 }
