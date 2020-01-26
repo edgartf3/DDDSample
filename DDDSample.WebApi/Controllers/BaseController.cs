@@ -94,24 +94,6 @@ namespace DDDSample.WebApi.Controllers
             return await tsc.Task;
         }
 
-
-        [HttpDelete]        
-        public async Task<IActionResult> DeleteModel([FromServices] IBaseService<T> service, [FromBody] T model)
-        {
-
-            var tsc = new TaskCompletionSource<IActionResult>();
-            try
-            {
-                service.Delete(model);
-                tsc.SetResult(CreateResponse("OK", 200));
-            }
-            catch (Exception e)
-            {
-                tsc.SetResult(CreateResponse(e.Message, 500));
-            }
-            return await tsc.Task;
-        }
-
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> DeleteId([FromServices] IBaseService<T> service, [FromRoute] Guid id)
@@ -130,6 +112,7 @@ namespace DDDSample.WebApi.Controllers
             return await tsc.Task;
         }
 
+        /*
         [HttpPatch]
         [AcceptVerbs("PATCH")]
         [Route("JsonPatch/{id}")]
@@ -184,5 +167,6 @@ namespace DDDSample.WebApi.Controllers
             }
             return await tsc.Task;
         }
+        */
     }
 }
