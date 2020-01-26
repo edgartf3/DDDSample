@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DDDSample.Domain.Core.Entities;
+﻿using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using RestSharp;
+using System;
+using System.Threading.Tasks;
+using System.Web.Http.OData;
 
 namespace DDDSample.WebApi.Controllers
 {
@@ -122,6 +121,61 @@ namespace DDDSample.WebApi.Controllers
             try
             {
                 service.Delete(id);
+                tsc.SetResult(CreateResponse("OK", 200));
+            }
+            catch (Exception e)
+            {
+                tsc.SetResult(CreateResponse(e.Message, 500));
+            }
+            return await tsc.Task;
+        }
+
+        [HttpPatch]
+        [AcceptVerbs("PATCH")]
+        [Route("JsonPatch/{id}")]
+        public async Task<IActionResult> Patch([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] JsonPatchDocument<T> model)
+        {            
+            var tsc = new TaskCompletionSource<IActionResult>();
+            try
+            {
+                if (model != null)
+                {
+                    var dominio = service.Get(id);
+                    if (dominio != null)
+                    {
+                        model.ApplyTo(dominio);
+                        service.Update(dominio);
+                    }
+
+                }
+                tsc.SetResult(CreateResponse("OK", 200));
+            }
+            catch (Exception e)
+            {
+                tsc.SetResult(CreateResponse(e.Message, 500));
+            }
+            return await tsc.Task;
+        }
+
+
+        [HttpPatch]
+        [AcceptVerbs("PATCH")]
+        [Route("delta/{id}")]
+        public async Task<IActionResult> Patch([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] Delta<T> model)
+        {
+            var tsc = new TaskCompletionSource<IActionResult>();
+            try
+            {
+                if (model != null)
+                {
+                    var dominio = service.Get(id);
+                    if (dominio != null)
+                    {
+                        model.Patch(dominio);
+                        service.Update(dominio);
+                    }
+
+                }
                 tsc.SetResult(CreateResponse("OK", 200));
             }
             catch (Exception e)

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Venda.Entities;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DDDSample.WebApi.Controllers
@@ -12,5 +14,6 @@ namespace DDDSample.WebApi.Controllers
     [ApiController]
     public class ProdutoController : BaseController<Produto>
     {
+
     }
 }

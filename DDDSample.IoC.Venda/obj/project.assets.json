@@ -4974,11 +4974,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
+      "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
       "projectName": "DDDSample.IoC.Venda",
-      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
+      "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
       "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-      "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.IoC.Venda\\obj\\",
+      "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4994,14 +4994,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
-              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+            "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
             },
-            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
-              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
+            "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
             },
-            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
-              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+            "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
             }
           }
         }

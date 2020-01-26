@@ -21,3 +21,11 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfo.cs
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.deps.json
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.csprojAssemblyReference.cache
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfoInputs.cache
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfo.cs
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb

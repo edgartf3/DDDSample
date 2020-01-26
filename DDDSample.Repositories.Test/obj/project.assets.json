@@ -6921,11 +6921,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+      "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
       "projectName": "DDDSample.Repositories.Test",
-      "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+      "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
       "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-      "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
+      "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6941,8 +6941,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
-              "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+            "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {}
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {}
   },
   "projects": {
-    "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
         "projectName": "DDDSample.Domain.Core",
-        "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
         "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-        "outputPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\obj\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
