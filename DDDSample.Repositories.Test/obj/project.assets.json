@@ -2113,6 +2113,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "DDDSample.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Domain.dll": {}
+        }
+      },
       "DDDSample.Domain.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
@@ -2123,24 +2136,11 @@
           "bin/placeholder/DDDSample.Domain.Core.dll": {}
         }
       },
-      "DDDSample.Domain.Venda/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
-        "dependencies": {
-          "DDDSample.Domain.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DDDSample.Domain.Venda.dll": {}
-        }
-      },
       "DDDSample.Framework.DataBase/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "DDDSample.Domain.Venda": "1.0.0",
+          "DDDSample.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "compile": {
@@ -7356,15 +7356,15 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "DDDSample.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj",
+      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.csproj"
+    },
     "DDDSample.Domain.Core/1.0.0": {
       "type": "project",
       "path": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj",
       "msbuildProject": "../DDDSample.Domain.Core/DDDSample.Domain.Core.csproj"
-    },
-    "DDDSample.Domain.Venda/1.0.0": {
-      "type": "project",
-      "path": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj",
-      "msbuildProject": "../DDDSample.Domain.Venda/DDDSample.Domain.Venda.csproj"
     },
     "DDDSample.Framework.DataBase/1.0.0": {
       "type": "project",
@@ -7385,26 +7385,32 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\mathe\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
 =======
     "C:\\Users\\edgar\\.nuget\\packages\\": {}
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+    "C:\\Users\\edgar\\.nuget\\packages\\": {}
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
   },
   "project": {
     "version": "1.0.0",
     "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+=======
+      "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
       "projectName": "DDDSample.Repositories.Test",
-      "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
+      "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Repositories.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
       "projectUniqueName": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Repositories.Test\\DDDSample.Repositories.Test.csproj",
@@ -7416,6 +7422,9 @@
       "configFilePaths": [
         "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7429,12 +7438,17 @@
         "netcoreapp3.0": {
           "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
               "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
 =======
             "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
               "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+            "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+              "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
             }
           }
         }
@@ -7505,10 +7519,14 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
       }
     }
   }

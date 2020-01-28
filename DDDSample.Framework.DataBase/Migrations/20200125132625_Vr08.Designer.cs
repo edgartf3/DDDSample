@@ -4,14 +4,16 @@ using DDDSample.Framework.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DDDSample.Framework.DataBase.Migrations
 {
     [DbContext(typeof(SampleDBContext))]
-    partial class SampleDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200125132625_Vr08")]
+    partial class Vr08
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -147,15 +149,10 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("FabricanteId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<double>("Preco")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FabricanteId");
 
                     b.ToTable("Produtos");
                 });
@@ -215,13 +212,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Endereco", "Endereco")
                         .WithMany()
                         .HasForeignKey("EnderecoId");
-                });
-
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Produto", b =>
-                {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Fabricante", "Fabricante")
-                        .WithMany()
-                        .HasForeignKey("FabricanteId");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>

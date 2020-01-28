@@ -4,14 +4,16 @@ using DDDSample.Framework.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DDDSample.Framework.DataBase.Migrations
 {
     [DbContext(typeof(SampleDBContext))]
-    partial class SampleDBContextModelSnapshot : ModelSnapshot
+    [Migration("20200125125057_Vr07")]
+    partial class Vr07
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,23 +54,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Endereco");
-                });
-
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Fabricante", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Fabricantes");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Item", b =>
@@ -147,15 +132,10 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("FabricanteId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<double>("Preco")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FabricanteId");
 
                     b.ToTable("Produtos");
                 });
@@ -215,13 +195,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Endereco", "Endereco")
                         .WithMany()
                         .HasForeignKey("EnderecoId");
-                });
-
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Produto", b =>
-                {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Fabricante", "Fabricante")
-                        .WithMany()
-                        .HasForeignKey("FabricanteId");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>

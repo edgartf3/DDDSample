@@ -32,10 +32,15 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\D
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+<<<<<<< HEAD
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Venda.pdb
+=======
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csprojAssemblyReference.cache
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.AssemblyInfoInputs.cache
@@ -43,3 +48,23 @@ D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\D
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csproj.CopyComplete
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
 D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
+<<<<<<< HEAD
+=======
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.dll
+D:\Sistemas\Laboratório\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.deps.json
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Domain.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Framework.DataBase.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csprojAssemblyReference.cache
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.AssemblyInfoInputs.cache
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.AssemblyInfo.cs
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.csproj.CopyComplete
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271

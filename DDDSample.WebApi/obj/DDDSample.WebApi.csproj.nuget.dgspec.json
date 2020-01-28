@@ -2,22 +2,24 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj": {}
+=======
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj": {}
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
   },
   "projects": {
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
         "projectName": "DDDSample.Domain.Core",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
     "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj": {}
@@ -35,6 +37,9 @@
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,23 +92,25 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
-        "projectName": "DDDSample.Domain.Venda",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
+        "projectName": "DDDSample.Domain",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
@@ -122,6 +129,9 @@
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -135,12 +145,17 @@
           "netcoreapp3.0": {
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
                 "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
 =======
               "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
                 "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
               }
             }
           }
@@ -183,23 +198,25 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
         "projectName": "DDDSample.Framework.DataBase",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\obj\\",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
@@ -218,6 +235,9 @@
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,12 +251,17 @@
           "netcoreapp3.0": {
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
                 "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
 =======
               "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
                 "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
               }
             }
           }
@@ -291,23 +316,25 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
         "projectName": "DDDSample.IoC.Venda",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\obj\\",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
@@ -326,6 +353,9 @@
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -339,12 +369,18 @@
           "netcoreapp3.0": {
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
                 "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+=======
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Core\\DDDSample.Domain.Core.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
               },
-              "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj": {
-                "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.Venda.csproj"
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Domain.Venda\\DDDSample.Domain.csproj"
               },
+<<<<<<< HEAD
               "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
                 "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
 =======
@@ -357,6 +393,10 @@
               "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
                 "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.Framework.DataBase\\DDDSample.Framework.DataBase.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
               }
             }
           }
@@ -409,23 +449,25 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
       }
     },
-    "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj": {
+    "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj",
+        "projectUniqueName": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj",
         "projectName": "DDDSample.WebApi",
-        "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.WebApi\\obj\\",
+        "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.WebApi\\DDDSample.WebApi.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.WebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
@@ -444,6 +486,9 @@
         "configFilePaths": [
           "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -457,12 +502,17 @@
           "netcoreapp3.0": {
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj": {
                 "projectPath": "C:\\Sistemas\\TRDEV\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj"
 =======
               "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj": {
                 "projectPath": "D:\\Sistemas\\Laboratório\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+              "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj": {
+                "projectPath": "D:\\Sistemas\\Laboratorio\\DDDSample\\DDDSample.IoC.Venda\\DDDSample.IoC.Venda.csproj"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
               }
             }
           }
@@ -476,6 +526,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.OData": {
+              "target": "Package",
+              "version": "[5.7.0, )"
+            },
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -489,6 +547,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -509,10 +575,14 @@
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "version": "[3.0.1, 3.0.1]"
 =======
               "version": "[3.0.2, 3.0.2]"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+              "version": "[3.0.2, 3.0.2]"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -532,10 +602,14 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
 >>>>>>> f711203b944874107a4c6b97cf1e3b64ca55635d
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
       }
     }

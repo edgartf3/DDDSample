@@ -1,9 +1,12 @@
 ﻿using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
+using DDDSample.Domain.Venda.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
 
 namespace DDDSample.Framework.DataBase
 {
@@ -21,20 +24,21 @@ namespace DDDSample.Framework.DataBase
         }
         public void Create(TEntity model)
         {
+            model.CriadoEm = DateTime.Now;
             _dbSet.Add(model);
-            _context.SaveChanges();            
+            _context.SaveChangesAsync().Wait();
         }
 
         public void Delete(TEntity model)
         {
             _dbSet.Remove(model);
-            _context.SaveChanges();
+            _context.SaveChangesAsync().Wait();
         }
 
         public void Delete(Guid id)
         {
             _dbSet.Remove(this.Get(id));
-            _context.SaveChanges();
+            _context.SaveChangesAsync().Wait();
         }
 
         public TEntity Get(Guid id)
@@ -67,10 +71,35 @@ namespace DDDSample.Framework.DataBase
             return query;
         }
 
+        public static object CheckUpdateObject(object originalObj, object updateObj)
+        {
+            foreach (var property in updateObj.GetType().GetProperties())
+            {
+                if (property.GetValue(updateObj, null) == null)
+                {
+                    property.SetValue(updateObj, originalObj.GetType().GetProperty(property.Name)
+                    .GetValue(originalObj, null));
+                }
+            }
+            return updateObj;
+        }
+
         public void Update(TEntity model)
         {
             _dbSet.Update(model);
+<<<<<<< HEAD
             _context.SaveChanges();
+=======
+           
+            //// Here model is model return from form on post
+            //var oldobj = _dbSet.Where(x => x.Id == model.Id).SingleOrDefault();
+
+            //// Newly Inserted Code
+            //var UpdatedObj = CheckUpdateObject(oldobj, model);
+
+            //_context.Entry(oldobj).CurrentValues.SetValues(UpdatedObj);
+            _context.SaveChangesAsync().Wait();
+>>>>>>> 397fc590adfb3a2a5a095a83686192d24a075271
         }
     }
 }

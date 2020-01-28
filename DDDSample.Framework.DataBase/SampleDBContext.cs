@@ -16,5 +16,7 @@ namespace DDDSample.Framework.DataBase
         public DbSet<Item> Itens { get; set; }
         public DbSet<Fabricante> Fabricantes { get; set; }
 
+        public DbSet<Fabricante> Fabricantes { get; set; }
+
     }
 }
