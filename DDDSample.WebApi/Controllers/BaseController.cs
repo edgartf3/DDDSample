@@ -1,11 +1,8 @@
 ﻿using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using RestSharp;
 using System;
 using System.Threading.Tasks;
-using System.Web.Http.OData;
 
 namespace DDDSample.WebApi.Controllers
 {
