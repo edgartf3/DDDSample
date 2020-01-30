@@ -1,5 +1,6 @@
 ﻿using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -71,18 +72,17 @@ namespace DDDSample.WebApi.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromServices] IBaseService<T> service, [FromBody] T entity)
+        [Route("{id}")]
+        public async Task<IActionResult> Update([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] T model)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
             try
             {
-                //T obj = service.Get(entity.TryGetValue("Id"));
-
-
-
-                service.Update(entity);
+                model.Id = id;
+                service.Update(model);
                 tsc.SetResult(CreateResponse("OK", 200));
+
             }
             catch (Exception e)
             {
@@ -109,10 +109,9 @@ namespace DDDSample.WebApi.Controllers
             return await tsc.Task;
         }
 
-        /*
-        [HttpPatch]
-        [AcceptVerbs("PATCH")]
-        [Route("JsonPatch/{id}")]
+        
+        [HttpPatch]        
+        [Route("{id}")]
         public async Task<IActionResult> Patch([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] JsonPatchDocument<T> model)
         {            
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -135,35 +134,6 @@ namespace DDDSample.WebApi.Controllers
                 tsc.SetResult(CreateResponse(e.Message, 500));
             }
             return await tsc.Task;
-        }
-
-
-        [HttpPatch]
-        [AcceptVerbs("PATCH")]
-        [Route("delta/{id}")]
-        public async Task<IActionResult> Patch([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] Delta<T> model)
-        {
-            var tsc = new TaskCompletionSource<IActionResult>();
-            try
-            {
-                if (model != null)
-                {
-                    var dominio = service.Get(id);
-                    if (dominio != null)
-                    {
-                        model.Patch(dominio);
-                        service.Update(dominio);
-                    }
-
-                }
-                tsc.SetResult(CreateResponse("OK", 200));
-            }
-            catch (Exception e)
-            {
-                tsc.SetResult(CreateResponse(e.Message, 500));
-            }
-            return await tsc.Task;
-        }
-        */
+        }        
     }
 }

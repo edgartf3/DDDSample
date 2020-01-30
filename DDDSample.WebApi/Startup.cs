@@ -6,10 +6,12 @@ using DDDSample.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 namespace DDDSample.WebApi
@@ -27,6 +29,13 @@ namespace DDDSample.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddControllersWithViews().AddNewtonsoftJson();
+            services.AddControllersWithViews(options =>
+            {
+                options.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+            });
+
             BindingsContainers.ConfigureServices(services, Configuration);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -65,5 +74,24 @@ namespace DDDSample.WebApi
                 endpoints.MapControllers();
             });
         }
+
+        
+
+        private static NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter()
+        {
+            var builder = new ServiceCollection()
+                .AddLogging()
+                .AddMvc()
+                .AddNewtonsoftJson()
+                .Services.BuildServiceProvider();
+
+            return builder
+                .GetRequiredService<IOptions<MvcOptions>>()
+                .Value
+                .InputFormatters
+                .OfType<NewtonsoftJsonPatchInputFormatter>()
+                .First();
+        }
+        
     }
 }

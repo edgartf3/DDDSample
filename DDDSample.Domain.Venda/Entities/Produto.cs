@@ -8,8 +8,8 @@ namespace DDDSample.Domain.Venda.Entities
 {
     public class Produto : EntidadeBase, IAutoValida
     {              
-        public string? Descricao { get; set; }
-        public double? Preco { get; set; }
+        public string Descricao { get; set; }
+        public double Preco { get; set; }
 
         public Guid? FabricanteId { get; set; }
         public Fabricante Fabricante { get; set; }

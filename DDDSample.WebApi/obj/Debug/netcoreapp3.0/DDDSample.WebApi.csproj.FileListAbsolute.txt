@@ -539,11 +539,13 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSa
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.csprojAssemblyReference.cache
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\staticwebassets\DDDSample.WebApi.StaticWebAssets.Manifest.cache
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\staticwebassets\DDDSample.WebApi.StaticWebAssets.xml
-D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.AssemblyInfoInputs.cache
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.AssemblyInfo.cs
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.RazorTargetAssemblyInfo.cache
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.csproj.CopyComplete
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cache
