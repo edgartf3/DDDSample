@@ -1,4 +1,5 @@
-﻿using DDDSample.Domain.Venda.Entities;
+﻿using DDDSample.Domain.Entities;
+using DDDSample.Domain.Venda.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,12 +14,20 @@ namespace DDDSample.Framework.DataBase
             
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            
+        }
+
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Item> Itens { get; set; }
-
         public DbSet<Fabricante> Fabricantes { get; set; }
+
+        public DbSet<RamoAtividade> RamosAtividade { get; set; }
 
     }
 }
