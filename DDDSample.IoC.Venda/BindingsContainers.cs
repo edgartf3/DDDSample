@@ -1,5 +1,6 @@
 ﻿using DDDSample.Domain.Core;
 using DDDSample.Domain.Core.Interfaces;
+using DDDSample.Domain.Entities;
 using DDDSample.Domain.Venda.Entities;
 using DDDSample.Framework.DataBase;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +30,9 @@ namespace DDDSample.IoC
 
             services.AddScoped<IBaseService<Fabricante>, BaseService<Fabricante>>();
             services.AddScoped<IBaseRepository<Fabricante>, BaseRepository<Fabricante, SampleDBContext>>();
+
+            services.AddScoped<IBaseService<RamoAtividade>, BaseService<RamoAtividade>>();
+            services.AddScoped<IBaseRepository<RamoAtividade>, BaseRepository<RamoAtividade, SampleDBContext>>();
 
         }
     }

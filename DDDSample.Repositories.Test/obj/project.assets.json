@@ -1975,7 +1975,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "DDDSample.Domain.Core": "1.0.0"
+          "DDDSample.Domain.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.1.1"
         },
         "compile": {
           "bin/placeholder/DDDSample.Domain.dll": {}

@@ -12,7 +12,7 @@ namespace DDDSample.Domain.Venda.Entities
         public double Preco { get; set; }
 
         public Guid? FabricanteId { get; set; }
-        public Fabricante Fabricante { get; set; }
+        public virtual Fabricante Fabricante { get; set; }
 
         public bool IsValid()
         {            

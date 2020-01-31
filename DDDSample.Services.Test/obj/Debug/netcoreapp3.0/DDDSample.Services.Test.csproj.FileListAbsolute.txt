@@ -390,3 +390,4 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.csproj.CopyComplete
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\obj\Debug\netcoreapp3.0\DDDSample.Services.Test.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.Services.Test\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
