@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DDDSample.Application\DDDSample.Application.csproj" />
     <ProjectReference Include="..\DDDSample.IoC.Venda\DDDSample.IoC.Venda.csproj" />
   </ItemGroup>
 

@@ -19,7 +19,6 @@ namespace DDDSample.Domain.Venda.Entities
         public double ValorDesconto { get; set; }
         public double ValorTotal { get; set; }
         public ICollection<Item> Itens { get; set; }
-
         public Endereco Entrega { get; set; }
 
     }

@@ -1,4 +1,7 @@
-﻿using DDDSample.Domain.Core;
+﻿using DDDSample.Application.AppServices;
+using DDDSample.Application.Interfaces;
+using DDDSample.Application.ViewsModels;
+using DDDSample.Domain.Core;
 using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Entities;
 using DDDSample.Domain.Venda.Entities;
@@ -32,7 +35,8 @@ namespace DDDSample.IoC
             services.AddScoped<IBaseRepository<Fabricante>, BaseRepository<Fabricante, SampleDBContext>>();
 
             services.AddScoped<IBaseService<RamoAtividade>, BaseService<RamoAtividade>>();
-            services.AddScoped<IBaseRepository<RamoAtividade>, BaseRepository<RamoAtividade, SampleDBContext>>();
+            services.AddScoped<IBaseRepository<RamoAtividade>, BaseRepository<RamoAtividade, SampleDBContext>>();            
+            services.AddScoped<IBaseServiceApp<RamoAtividadeViewModel>, BaseServiceApp<RamoAtividadeViewModel, RamoAtividade>>();
 
         }
     }

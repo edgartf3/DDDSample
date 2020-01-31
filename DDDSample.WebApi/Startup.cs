@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DDDSample.Application.AutoMapper;
 using DDDSample.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -37,6 +38,7 @@ namespace DDDSample.WebApi
             });
 
             BindingsContainers.ConfigureServices(services, Configuration);
+            Mappings.RegisterMappings();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>

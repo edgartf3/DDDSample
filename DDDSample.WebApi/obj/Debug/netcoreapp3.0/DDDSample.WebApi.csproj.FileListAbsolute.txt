@@ -549,3 +549,6 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Micro
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSample.WebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\AutoMapper.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.pdb
