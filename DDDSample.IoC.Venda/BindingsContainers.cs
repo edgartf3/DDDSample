@@ -21,18 +21,23 @@ namespace DDDSample.IoC
 
             services.AddScoped<IBaseService<Produto>, BaseService<Produto>>();
             services.AddScoped<IBaseRepository<Produto>, BaseRepository<Produto, SampleDBContext>>();
+            services.AddScoped<IBaseServiceApp<Produto>, BaseServiceApp<Produto, Produto>>();
 
             services.AddScoped<IBaseService<Pessoa>, BaseService<Pessoa>>();
             services.AddScoped<IBaseRepository<Pessoa>, BaseRepository<Pessoa, SampleDBContext>>();
+            services.AddScoped<IBaseServiceApp<PessoaViewModel>, BaseServiceApp<PessoaViewModel, Pessoa>>();
 
             services.AddScoped<IBaseService<Venda>, BaseService<Venda>>();
             services.AddScoped<IBaseRepository<Venda>, BaseRepository<Venda, SampleDBContext>>();
+            services.AddScoped<IBaseServiceApp<Venda>, BaseServiceApp<Venda, Venda>>();
 
             services.AddScoped<IBaseService<Item>, BaseService<Item>>();
             services.AddScoped<IBaseRepository<Item>, BaseRepository<Item, SampleDBContext>>();
+            services.AddScoped<IBaseServiceApp<Item>, BaseServiceApp<Item, Item>>();
 
             services.AddScoped<IBaseService<Fabricante>, BaseService<Fabricante>>();
             services.AddScoped<IBaseRepository<Fabricante>, BaseRepository<Fabricante, SampleDBContext>>();
+            services.AddScoped<IBaseServiceApp<Fabricante>, BaseServiceApp<Fabricante, Fabricante>>();
 
             services.AddScoped<IBaseService<RamoAtividade>, BaseService<RamoAtividade>>();
             services.AddScoped<IBaseRepository<RamoAtividade>, BaseRepository<RamoAtividade, SampleDBContext>>();            

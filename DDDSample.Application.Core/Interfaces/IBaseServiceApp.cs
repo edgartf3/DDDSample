@@ -1,11 +1,10 @@
-﻿using DDDSample.Application.Core.ViewsModels;
+﻿using DDDSample.Domain.Core.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DDDSample.Application.Core.Interfaces
 {
-    public interface IBaseServiceApp<T> where T: EntidadeBaseViewModel
+    public interface IBaseServiceApp<T> where T: EntidadeBase
     {
         void Create(T model);
         void Update(T model);

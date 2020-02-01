@@ -1,12 +1,10 @@
-﻿using DDDSample.Application.Core.ViewsModels;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using DDDSample.Domain.Core.Entities;
 
 namespace DDDSample.Application.ViewsModels
 {
-    public class RamoAtividadeViewModel: EntidadeBaseViewModel
-    {        
+    public class RamoAtividadeViewModel: EntidadeBase
+    {
         public string Descricao { get; set; }
+
     }
 }

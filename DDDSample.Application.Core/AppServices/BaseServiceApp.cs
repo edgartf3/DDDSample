@@ -1,16 +1,14 @@
 ﻿using AutoMapper;
 using DDDSample.Application.Core.Interfaces;
-using DDDSample.Application.Core.ViewsModels;
 using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DDDSample.Application.Core.AppServices
 {
     public class BaseServiceApp<TViewModel, TBaseModel> : IBaseServiceApp<TViewModel>
-        where TViewModel : EntidadeBaseViewModel
+        where TViewModel : EntidadeBase
         where TBaseModel : EntidadeBase
     {
 
