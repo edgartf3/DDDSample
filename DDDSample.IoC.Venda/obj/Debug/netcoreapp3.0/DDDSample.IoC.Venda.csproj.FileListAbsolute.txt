@@ -60,3 +60,5 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DD
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\obj\Debug\netcoreapp3.0\DDDSample.IoC.Venda.pdb
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Application.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Application.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Application.Core.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.IoC.Venda\bin\Debug\netcoreapp3.0\DDDSample.Application.Core.pdb

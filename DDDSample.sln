@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Repositories.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{990EB78F-8427-474B-A3D2-8896341B8C55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Application", "DDDSample.Application\DDDSample.Application.csproj", "{ACA02758-6284-4A7F-A6DC-B981EDA7C23F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDDSample.Application", "DDDSample.Application\DDDSample.Application.csproj", "{ACA02758-6284-4A7F-A6DC-B981EDA7C23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Application.Core", "DDDSample.Application.Core\DDDSample.Application.Core.csproj", "{518238D5-7F19-4725-96A8-6423E101324D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{ACA02758-6284-4A7F-A6DC-B981EDA7C23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACA02758-6284-4A7F-A6DC-B981EDA7C23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACA02758-6284-4A7F-A6DC-B981EDA7C23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518238D5-7F19-4725-96A8-6423E101324D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518238D5-7F19-4725-96A8-6423E101324D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518238D5-7F19-4725-96A8-6423E101324D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518238D5-7F19-4725-96A8-6423E101324D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +109,7 @@ Global
 		{4D0865D0-B239-44F8-BEC5-EDDC0BE3176D} = {AE627254-A15F-42B5-9BF1-570121529D15}
 		{1A51DB9A-6345-49C8-9D34-DE556467F329} = {4D0865D0-B239-44F8-BEC5-EDDC0BE3176D}
 		{ACA02758-6284-4A7F-A6DC-B981EDA7C23F} = {990EB78F-8427-474B-A3D2-8896341B8C55}
+		{518238D5-7F19-4725-96A8-6423E101324D} = {990EB78F-8427-474B-A3D2-8896341B8C55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90AA4AD6-B70D-4893-8CBB-4430C035CE8A}

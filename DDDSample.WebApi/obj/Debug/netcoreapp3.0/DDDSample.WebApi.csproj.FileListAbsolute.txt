@@ -552,3 +552,5 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\obj\Debug\netcoreapp3.0\DDDSa
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\AutoMapper.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.pdb
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.Core.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.Application.Core.pdb

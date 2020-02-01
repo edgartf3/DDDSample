@@ -888,11 +888,21 @@
       "DDDSample.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "DDDSample.Application.Core": "1.0.0",
           "DDDSample.Domain": "1.0.0",
           "DDDSample.Domain.Core": "1.0.0"
         },
         "runtime": {
           "DDDSample.Application.dll": {}
+        }
+      },
+      "DDDSample.Application.Core/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "7.0.1",
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "DDDSample.Application.Core.dll": {}
         }
       },
       "DDDSample.Domain/1.0.0": {
@@ -1550,6 +1560,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "DDDSample.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DDDSample.Application.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

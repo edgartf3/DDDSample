@@ -1,5 +1,5 @@
-﻿using DDDSample.Application.AppServices;
-using DDDSample.Application.Interfaces;
+﻿using DDDSample.Application.Core.AppServices;
+using DDDSample.Application.Core.Interfaces;
 using DDDSample.Application.ViewsModels;
 using DDDSample.Domain.Core;
 using DDDSample.Domain.Core.Interfaces;

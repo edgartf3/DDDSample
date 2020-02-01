@@ -2678,6 +2678,7 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "AutoMapper": "7.0.1",
+          "DDDSample.Application.Core": "1.0.0",
           "DDDSample.Domain": "1.0.0",
           "DDDSample.Domain.Core": "1.0.0"
         },
@@ -2686,6 +2687,20 @@
         },
         "runtime": {
           "bin/placeholder/DDDSample.Application.dll": {}
+        }
+      },
+      "DDDSample.Application.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "AutoMapper": "7.0.1",
+          "DDDSample.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DDDSample.Application.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DDDSample.Application.Core.dll": {}
         }
       },
       "DDDSample.Domain/1.0.0": {
@@ -8583,6 +8598,11 @@
       "type": "project",
       "path": "../DDDSample.Application/DDDSample.Application.csproj",
       "msbuildProject": "../DDDSample.Application/DDDSample.Application.csproj"
+    },
+    "DDDSample.Application.Core/1.0.0": {
+      "type": "project",
+      "path": "../DDDSample.Application.Core/DDDSample.Application.Core.csproj",
+      "msbuildProject": "../DDDSample.Application.Core/DDDSample.Application.Core.csproj"
     },
     "DDDSample.Domain/1.0.0": {
       "type": "project",

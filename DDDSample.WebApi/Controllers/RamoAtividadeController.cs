@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DDDSample.Application.Interfaces;
+﻿using DDDSample.Application.Core.Interfaces;
 using DDDSample.Application.ViewsModels;
-using DDDSample.Domain.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace DDDSample.WebApi.Controllers
 {

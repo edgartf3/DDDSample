@@ -1,25 +1,25 @@
 ﻿using AutoMapper;
-using DDDSample.Application.Interfaces;
-using DDDSample.Application.ViewsModels;
+using DDDSample.Application.Core.Interfaces;
+using DDDSample.Application.Core.ViewsModels;
 using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDDSample.Application.AppServices
+namespace DDDSample.Application.Core.AppServices
 {
-    public class BaseServiceApp<TViewModel, TBaseModel> : IBaseServiceApp<TViewModel> 
-        where TViewModel : EntidadeViewModelBase
+    public class BaseServiceApp<TViewModel, TBaseModel> : IBaseServiceApp<TViewModel>
+        where TViewModel : EntidadeBaseViewModel
         where TBaseModel : EntidadeBase
     {
+
         private IBaseService<TBaseModel> _service;
 
         public BaseServiceApp(IBaseService<TBaseModel> service)
         {
             _service = service;
         }
-
         public void Create(TViewModel model)
         {
             var entity = Mapper.Map<TViewModel, TBaseModel>(model);
@@ -28,27 +28,31 @@ namespace DDDSample.Application.AppServices
 
         public void Delete(TViewModel model)
         {
-            throw new NotImplementedException();
+            var entity = Mapper.Map<TViewModel, TBaseModel>(model);
+            _service.Delete(entity);
         }
 
         public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            _service.Delete(id);
         }
 
         public TViewModel Get(Guid id)
         {
-            throw new NotImplementedException();
+            var result = _service.Get(id);
+            return Mapper.Map<TBaseModel, TViewModel>(result);
         }
 
         public IEnumerable<TViewModel> GetAll()
         {
-            throw new NotImplementedException();
+            var result = _service.GetAll();
+            return Mapper.Map<IEnumerable<TBaseModel>, IEnumerable<TViewModel>>(result);
         }
 
         public void Update(TViewModel model)
         {
-            throw new NotImplementedException();
+            var entity = Mapper.Map<TViewModel, TBaseModel>(model);
+            _service.Update(entity);
         }
     }
 }
