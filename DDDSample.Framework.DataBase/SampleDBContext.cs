@@ -1,8 +1,11 @@
-﻿using DDDSample.Domain.Entities;
+﻿using DDDSample.Domain.Core.Attributes;
+using DDDSample.Domain.Entities;
 using DDDSample.Domain.Venda.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace DDDSample.Framework.DataBase
@@ -18,7 +21,36 @@ namespace DDDSample.Framework.DataBase
         {
             base.OnModelCreating(modelBuilder);
 
+            foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {                                     
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
+
+                
+                if (relationship.Properties.Count != 0)
+                {
+                    var prop = relationship.Properties[0];
+                    var PTR = prop.PropertyInfo;
+                    if (PTR != null)
+                    {
+                        
+                        var attributes = PTR.CustomAttributes;
+                        foreach (var attribute in attributes)
+                        {
+                            if (attribute.AttributeType.Name.ToLower() == "cascade")
+                            {
+                                relationship.DeleteBehavior = DeleteBehavior.Cascade;
+                            }
+                        }
+                    }                                                                                   
+                }                              
+            }
+
             
+
+            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>(); //Não fazer FKs nos relacinamentos 1-N com Delete Cascade habilitado *É Perigoso!!
+            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>(); //Não fazer FKs nos relacionamentos N-N com Delete Cascade Habilitado *É Perigoso!!
+
+
         }
 
         public DbSet<Produto> Produtos { get; set; }

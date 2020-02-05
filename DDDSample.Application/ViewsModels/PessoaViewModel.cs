@@ -9,6 +9,7 @@ namespace DDDSample.Application.ViewsModels
     {
         public string Nome { get; set; }
         public string Cpf_CNPJ { get; set; }
+        public Guid RamoAtividadeId { get; set; }
         public string RamoAtividadeDescricao { get; set; }
     }
 }

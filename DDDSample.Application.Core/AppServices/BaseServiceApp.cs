@@ -49,7 +49,7 @@ namespace DDDSample.Application.Core.AppServices
 
         public void Update(TViewModel model)
         {
-            var entity = Mapper.Map<TViewModel, TBaseModel>(model);
+            var entity = Mapper.Map<TViewModel, TBaseModel>(model);                        
             _service.Update(entity);
         }
     }

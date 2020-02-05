@@ -151,8 +151,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("RamoAtividadeId")
-                        .IsRequired()
+                    b.Property<Guid>("RamoAtividadeId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -226,7 +225,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Pessoa", null)
                         .WithOne("CaracteristicasFisica")
                         .HasForeignKey("DDDSample.Domain.Entities.CaracteristicaFisica", "PessoaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
                 });
 
@@ -243,11 +242,13 @@ namespace DDDSample.Framework.DataBase.Migrations
                 {
                     b.HasOne("DDDSample.Domain.Venda.Entities.Produto", "Produto")
                         .WithMany()
-                        .HasForeignKey("ProdutoId");
+                        .HasForeignKey("ProdutoId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("DDDSample.Domain.Venda.Entities.Venda", null)
                         .WithMany("Itens")
-                        .HasForeignKey("VendaId");
+                        .HasForeignKey("VendaId")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Pessoa", b =>
@@ -255,7 +256,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Entities.RamoAtividade", "RamoAtividade")
                         .WithMany()
                         .HasForeignKey("RamoAtividadeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.OwnsOne("DDDSample.Domain.Venda.Entities.Endereco", "Entrega", b1 =>
@@ -331,14 +332,16 @@ namespace DDDSample.Framework.DataBase.Migrations
                 {
                     b.HasOne("DDDSample.Domain.Venda.Entities.Fabricante", "Fabricante")
                         .WithMany()
-                        .HasForeignKey("FabricanteId");
+                        .HasForeignKey("FabricanteId")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>
                 {
                     b.HasOne("DDDSample.Domain.Venda.Entities.Pessoa", "Cliente")
                         .WithMany()
-                        .HasForeignKey("ClienteId");
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.OwnsOne("DDDSample.Domain.Venda.Entities.Endereco", "Entrega", b1 =>
                         {

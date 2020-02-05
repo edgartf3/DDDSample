@@ -33,7 +33,8 @@ namespace DDDSample.Repositories.Test
             var pessoa = new Pessoa()
             {
                 Cpf_CNPJ = "12345678901",
-                Nome = "Edgar"                
+                Nome = "Edgar",
+                RamoAtividadeId = Guid.Parse("23DF4BD9-0E02-47F9-91F4-4EFEF13DEDDB")
             };
 
             pessoa.Dependentes.Add(new Dependente("Daise"));
@@ -58,8 +59,8 @@ namespace DDDSample.Repositories.Test
             var pessoa = new Pessoa()
             {
                 Cpf_CNPJ = "12345678901",
-                Nome = "Olimpio"
-
+                Nome = "Olimpio",
+                RamoAtividadeId = Guid.Parse("23DF4BD9-0E02-47F9-91F4-4EFEF13DEDDB")
             };
 
             pessoa.Dependentes.Add(new Dependente("Julia"));

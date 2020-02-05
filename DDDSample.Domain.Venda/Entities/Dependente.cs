@@ -1,4 +1,5 @@
-﻿using DDDSample.Domain.Core.Entities;
+﻿using DDDSample.Domain.Core.Attributes;
+using DDDSample.Domain.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -15,7 +16,7 @@ namespace DDDSample.Domain.Entities
         public string Nome { get; set; }
         public string CPF { get; set; }
 
-        [Required]
+        [Cascade]
         public Guid PessoaId { get; set; }
 
     }

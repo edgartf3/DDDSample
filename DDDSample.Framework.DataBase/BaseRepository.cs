@@ -1,12 +1,10 @@
-﻿using DDDSample.Domain.Core.Entities;
+﻿using DDDSample.Domain.Core.Attributes;
+using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
-using DDDSample.Domain.Venda.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 
 namespace DDDSample.Framework.DataBase
 {
@@ -24,6 +22,7 @@ namespace DDDSample.Framework.DataBase
         }
         public void Create(TEntity model)
         {
+            this.ApplyConfig(model);
             model.CriadoEm = DateTime.Now;
             _dbSet.Add(model);
             _context.SaveChangesAsync().Wait();
@@ -31,13 +30,16 @@ namespace DDDSample.Framework.DataBase
 
         public void Delete(TEntity model)
         {
+            this.ApplyConfig(model);
             _dbSet.Remove(model);
             _context.SaveChangesAsync().Wait();
         }
 
         public void Delete(Guid id)
         {
-            _dbSet.Remove(this.Get(id));
+            var model = this.Get(id);
+            this.ApplyConfig(model);
+            _dbSet.Remove(model);
             _context.SaveChangesAsync().Wait();
         }
 
@@ -86,16 +88,30 @@ namespace DDDSample.Framework.DataBase
 
         public void Update(TEntity model)
         {
-            _dbSet.Update(model);
-           
-            //// Here model is model return from form on post
-            //var oldobj = _dbSet.Where(x => x.Id == model.Id).SingleOrDefault();
-
-            //// Newly Inserted Code
-            //var UpdatedObj = CheckUpdateObject(oldobj, model);
-
-            //_context.Entry(oldobj).CurrentValues.SetValues(UpdatedObj);
+            this.ApplyConfig(model);
+            _dbSet.Update(model);          
             _context.SaveChangesAsync().Wait();
+        }
+
+        private void ApplyConfig(TEntity model)
+        {
+            var properties = model.GetType().GetProperties();
+            foreach (var prop in properties)
+            {
+                //if (prop.GetGetMethod().IsVirtual)
+                //{
+                //    prop.SetValue(model, null);
+                //}
+                var attributies = prop.GetCustomAttributes(true);
+                foreach (var attribute in attributies)
+                {
+                    if (attribute is NotPersist)
+                    {
+                        prop.SetValue(model, null);
+                    }
+                }
+            }
+            
         }
     }
 }

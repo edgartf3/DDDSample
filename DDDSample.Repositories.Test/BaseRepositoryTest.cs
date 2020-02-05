@@ -50,7 +50,7 @@ namespace DDDSample.Repositories.Test
         [Order(1)]
         public void Update()
         {            
-            var produto = repository.Get(Guid.Parse("D875D491-1116-4A0E-A8BB-65CBBB53BF24"));
+            var produto = repository.Get(produtoId);
             produto.Descricao = "Mouse";
             produto.Preco = 67.90;
             repository.Update(produto);
