@@ -109,7 +109,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<double>("Preco")
                         .HasColumnType("float");
 
-                    b.Property<Guid?>("ProdutoId")
+                    b.Property<Guid>("ProdutoId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<double>("Quantidade")
@@ -243,7 +243,8 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.HasOne("DDDSample.Domain.Venda.Entities.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("DDDSample.Domain.Venda.Entities.Venda", null)
                         .WithMany("Itens")
@@ -259,7 +260,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.OwnsOne("DDDSample.Domain.Venda.Entities.Endereco", "Entrega", b1 =>
+                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Entrega", b1 =>
                         {
                             b1.Property<Guid>("PessoaId")
                                 .HasColumnType("uniqueidentifier");
@@ -293,7 +294,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                                 .HasForeignKey("PessoaId");
                         });
 
-                    b.OwnsOne("DDDSample.Domain.Venda.Entities.Endereco", "Faturamento", b1 =>
+                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Faturamento", b1 =>
                         {
                             b1.Property<Guid>("PessoaId")
                                 .HasColumnType("uniqueidentifier");
@@ -343,7 +344,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.OwnsOne("DDDSample.Domain.Venda.Entities.Endereco", "Entrega", b1 =>
+                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Entrega", b1 =>
                         {
                             b1.Property<Guid>("VendaId")
                                 .HasColumnType("uniqueidentifier");

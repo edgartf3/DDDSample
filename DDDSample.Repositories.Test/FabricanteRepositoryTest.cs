@@ -1,4 +1,4 @@
-﻿using DDDSample.Domain.Venda.Entities;
+﻿using DDDSample.Domain.Vendas.Entities;
 using DDDSample.Framework.DataBase;
 using NUnit.Framework;
 using System;

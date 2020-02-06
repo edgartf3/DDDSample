@@ -4,10 +4,21 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDDSample.Domain.Venda.Entities
+namespace DDDSample.Domain.Entities
 {
     public class Produto : EntidadeBase, IAutoValida
-    {              
+    {
+        public Produto()
+        {
+
+        }
+
+        public Produto(string descricao, double preco)
+        {
+            Descricao = descricao;
+            Preco = preco;
+        }
+
         public string Descricao { get; set; }
         public double Preco { get; set; }
 

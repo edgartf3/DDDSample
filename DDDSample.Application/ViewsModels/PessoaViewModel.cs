@@ -11,5 +11,6 @@ namespace DDDSample.Application.ViewsModels
         public string Cpf_CNPJ { get; set; }
         public Guid RamoAtividadeId { get; set; }
         public string RamoAtividadeDescricao { get; set; }
+        public string EntregaCEP { get; set; }
     }
 }

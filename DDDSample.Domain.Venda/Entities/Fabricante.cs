@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDDSample.Domain.Venda.Entities
+namespace DDDSample.Domain.Entities
 {
     public class Fabricante : EntidadeBase
     {

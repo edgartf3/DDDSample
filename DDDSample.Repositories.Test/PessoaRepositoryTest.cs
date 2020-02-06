@@ -1,10 +1,8 @@
 ﻿using DDDSample.Domain.Entities;
-using DDDSample.Domain.Venda.Entities;
+using DDDSample.Domain.ValuesObject;
 using DDDSample.Framework.DataBase;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DDDSample.Repositories.Test
 {
@@ -31,11 +29,15 @@ namespace DDDSample.Repositories.Test
         {
             
             var pessoa = new Pessoa()
-            {
-                Cpf_CNPJ = "12345678901",
+            {                
                 Nome = "Edgar",
                 RamoAtividadeId = Guid.Parse("23DF4BD9-0E02-47F9-91F4-4EFEF13DEDDB")
             };
+            
+            
+            pessoa.Entrega = new Endereco();
+            pessoa.Entrega.SetCep("12345678");
+
 
             pessoa.Dependentes.Add(new Dependente("Daise"));
             pessoa.Dependentes.Add(new Dependente("Rodrigo"));

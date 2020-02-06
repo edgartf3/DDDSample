@@ -1,10 +1,10 @@
 ﻿using DDDSample.Application.Core.AppServices;
 using DDDSample.Application.Core.Interfaces;
+using DDDSample.Application.Services;
 using DDDSample.Application.ViewsModels;
 using DDDSample.Domain.Core;
 using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Entities;
-using DDDSample.Domain.Venda.Entities;
 using DDDSample.Framework.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -29,7 +29,8 @@ namespace DDDSample.IoC
 
             services.AddScoped<IBaseService<Venda>, BaseService<Venda>>();
             services.AddScoped<IBaseRepository<Venda>, BaseRepository<Venda, SampleDBContext>>();
-            services.AddScoped<IBaseServiceApp<Venda>, BaseServiceApp<Venda, Venda>>();
+            services.AddScoped<IBaseServiceApp<Venda>, VendaServiceApp>();
+            services.AddScoped<VendaServiceApp, VendaServiceApp>();
 
             services.AddScoped<IBaseService<Item>, BaseService<Item>>();
             services.AddScoped<IBaseRepository<Item>, BaseRepository<Item, SampleDBContext>>();
@@ -42,6 +43,9 @@ namespace DDDSample.IoC
             services.AddScoped<IBaseService<RamoAtividade>, BaseService<RamoAtividade>>();
             services.AddScoped<IBaseRepository<RamoAtividade>, BaseRepository<RamoAtividade, SampleDBContext>>();            
             services.AddScoped<IBaseServiceApp<RamoAtividadeViewModel>, BaseServiceApp<RamoAtividadeViewModel, RamoAtividade>>();
+
+            services.AddSingleton<ServiceProvider>(services.BuildServiceProvider());
+            services.AddScoped<IInjector, Injector>();
 
         }
     }

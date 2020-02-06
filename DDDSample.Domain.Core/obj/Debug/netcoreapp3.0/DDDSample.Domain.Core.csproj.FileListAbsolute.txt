@@ -28,4 +28,3 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.AssemblyInfo.cs
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.pdb
-D:\Sistemas\Laboratorio\DDDSample\DDDSample.Domain.Core\obj\Debug\netcoreapp3.0\DDDSample.Domain.Core.csprojAssemblyReference.cache

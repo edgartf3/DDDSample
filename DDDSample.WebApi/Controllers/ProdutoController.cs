@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using DDDSample.Domain.Core.Interfaces;
-using DDDSample.Domain.Venda.Entities;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.JsonPatch;
+﻿using DDDSample.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DDDSample.WebApi.Controllers

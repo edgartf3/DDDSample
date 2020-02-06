@@ -1,9 +1,9 @@
 using DDDSample.Domain.Core;
-using DDDSample.Domain.Venda.Entities;
+using DDDSample.Domain.Vendas.Entities;
 using DDDSample.Framework.DataBase;
 using NUnit.Framework;
 
-namespace DDDSample.Domain.Venda.Test
+namespace DDDSample.Domain.Vendas.Test
 {
     public class Tests
     {

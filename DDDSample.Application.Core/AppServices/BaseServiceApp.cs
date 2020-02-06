@@ -12,7 +12,7 @@ namespace DDDSample.Application.Core.AppServices
         where TBaseModel : EntidadeBase
     {
 
-        private IBaseService<TBaseModel> _service;
+        protected IBaseService<TBaseModel> _service;
 
         public BaseServiceApp(IBaseService<TBaseModel> service)
         {

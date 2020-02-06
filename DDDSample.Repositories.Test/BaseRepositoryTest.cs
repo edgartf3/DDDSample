@@ -1,4 +1,4 @@
-using DDDSample.Domain.Venda.Entities;
+using DDDSample.Domain.Vendas.Entities;
 using DDDSample.Framework.DataBase;
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
