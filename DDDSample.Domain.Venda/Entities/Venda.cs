@@ -31,20 +31,27 @@ namespace DDDSample.Domain.Entities
 
         public void AdicionarItem(Guid produtoId, double quantidade, IInjector injector)
         {
+            //Regra 1 verifica se o item já não está na venda
+            var x = _Itens.Where(a => a.ProdutoId == produtoId).FirstOrDefault();
+            if (x != null)
+            {
+                throw new Exception("Produto já lançado");
+            }
 
-            //var x = _Itens.Where(a => a.ProdutoId == produtoId).FirstOrDefault();
-            //if (x != null)
-            //{
-            //    throw new Exception("Produto já lançado");
-            //}
+            
+            //Regra 2 verifica se o produto está ativo
+            //*Pergunta: Neste ponto preciso de uma instancia do produto, mas recebi só o Guid Id
+            //           Preciso dar um get produto, no repositório isso está em um lugar adequado, ou deveria ter recebido o produto via parametro ?
+            
+            var repProduto = injector.Get<IBaseRepository<Produto>>(); //*Pergunta: esse Injector que fiz está certo, isso se usa desta forma ?
 
-            //Como
-            var repProduto = injector.Get<IBaseRepository<Produto>>();
             var produto = repProduto.Get(produtoId);
+            if (produto.Ativo == false)
+            {
+                throw new Exception("Produto não pode ser vendido");
+            }
 
-
-
-            var item = Item.NovoItem(produtoId, quantidade);
+            var item = Item.NovoItem(produto, quantidade);            
             _Itens.Add(item);
         }
 

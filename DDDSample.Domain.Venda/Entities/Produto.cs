@@ -1,12 +1,10 @@
 ﻿using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DDDSample.Domain.Entities
 {
-    public class Produto : EntidadeBase, IAutoValida
+    public class Produto : EntidadeBase
     {
         public Produto()
         {
@@ -17,10 +15,13 @@ namespace DDDSample.Domain.Entities
         {
             Descricao = descricao;
             Preco = preco;
+            Ativo = true;
         }
 
         public string Descricao { get; set; }
         public double Preco { get; set; }
+
+        public bool Ativo { get; set; }
 
         public Guid? FabricanteId { get; set; }
         public virtual Fabricante Fabricante { get; set; }

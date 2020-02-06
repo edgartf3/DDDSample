@@ -19,14 +19,14 @@ namespace DDDSample.Domain.Entities
         public double ValorDesconto { get; set; }
         public double Total { get; set; }
 
-        public static Item NovoItem(Guid produtoId, double quantidade)
+        public static Item NovoItem(Produto produto, double quantidade)
         {
             return new Item()
             {
-                ProdutoId = produtoId,
+                ProdutoId = produto.Id,
                 Quantidade = quantidade,
-                Preco = 2,
-                Total = quantidade * 2
+                Preco = produto.Preco,
+                Total = quantidade * produto.Preco
             };
         }
     }
