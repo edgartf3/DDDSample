@@ -890,7 +890,8 @@
           "AutoMapper": "7.0.1",
           "DDDSample.Application.Core": "1.0.0",
           "DDDSample.Domain": "1.0.0",
-          "DDDSample.Domain.Core": "1.0.0"
+          "DDDSample.Domain.Core": "1.0.0",
+          "DDDSample.Framework.DataBase": "1.0.0"
         },
         "runtime": {
           "DDDSample.Application.dll": {}

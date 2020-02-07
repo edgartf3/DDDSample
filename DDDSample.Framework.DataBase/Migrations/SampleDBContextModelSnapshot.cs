@@ -63,24 +63,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Dependente");
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Entities.RamoAtividade", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("CriadoEm")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("RamosAtividade");
-                });
-
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Fabricante", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Fabricante", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -97,7 +80,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Fabricantes");
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Item", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Item", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -136,7 +119,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Itens");
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Pessoa", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Pessoa", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -161,11 +144,14 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Pessoas");
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Produto", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Produto", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
@@ -186,7 +172,24 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.RamoAtividade", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RamosAtividade");
+                });
+
+            modelBuilder.Entity("DDDSample.Domain.Entities.Venda", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -213,16 +216,41 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<double>("ValorTotal")
                         .HasColumnType("float");
 
+                    b.Property<Guid>("VendedorId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ClienteId");
 
+                    b.HasIndex("VendedorId");
+
                     b.ToTable("Vendas");
+                });
+
+            modelBuilder.Entity("DDDSample.Domain.Entities.Vendedor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("CriadoEm")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("PercentualDescontoMaximo")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vendedores");
                 });
 
             modelBuilder.Entity("DDDSample.Domain.Entities.CaracteristicaFisica", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Pessoa", null)
+                    b.HasOne("DDDSample.Domain.Entities.Pessoa", null)
                         .WithOne("CaracteristicasFisica")
                         .HasForeignKey("DDDSample.Domain.Entities.CaracteristicaFisica", "PessoaId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -231,28 +259,28 @@ namespace DDDSample.Framework.DataBase.Migrations
 
             modelBuilder.Entity("DDDSample.Domain.Entities.Dependente", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Pessoa", null)
+                    b.HasOne("DDDSample.Domain.Entities.Pessoa", null)
                         .WithMany("Dependentes")
                         .HasForeignKey("PessoaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Item", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Item", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Produto", "Produto")
+                    b.HasOne("DDDSample.Domain.Entities.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Venda", null)
+                    b.HasOne("DDDSample.Domain.Entities.Venda", null)
                         .WithMany("Itens")
                         .HasForeignKey("VendaId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Pessoa", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Pessoa", b =>
                 {
                     b.HasOne("DDDSample.Domain.Entities.RamoAtividade", "RamoAtividade")
                         .WithMany()
@@ -260,7 +288,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Entrega", b1 =>
+                    b.OwnsOne("DDDSample.Domain.ValuesObject.Endereco", "Entrega", b1 =>
                         {
                             b1.Property<Guid>("PessoaId")
                                 .HasColumnType("uniqueidentifier");
@@ -294,7 +322,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                                 .HasForeignKey("PessoaId");
                         });
 
-                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Faturamento", b1 =>
+                    b.OwnsOne("DDDSample.Domain.ValuesObject.Endereco", "Faturamento", b1 =>
                         {
                             b1.Property<Guid>("PessoaId")
                                 .HasColumnType("uniqueidentifier");
@@ -329,22 +357,28 @@ namespace DDDSample.Framework.DataBase.Migrations
                         });
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Produto", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Produto", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Fabricante", "Fabricante")
+                    b.HasOne("DDDSample.Domain.Entities.Fabricante", "Fabricante")
                         .WithMany()
                         .HasForeignKey("FabricanteId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
-            modelBuilder.Entity("DDDSample.Domain.Venda.Entities.Venda", b =>
+            modelBuilder.Entity("DDDSample.Domain.Entities.Venda", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Venda.Entities.Pessoa", "Cliente")
+                    b.HasOne("DDDSample.Domain.Entities.Pessoa", "Cliente")
                         .WithMany()
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.OwnsOne("DDDSample.Domain.Venda.ValuesObject.Endereco", "Entrega", b1 =>
+                    b.HasOne("DDDSample.Domain.Entities.Vendedor", "Vendedor")
+                        .WithMany()
+                        .HasForeignKey("VendedorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.OwnsOne("DDDSample.Domain.ValuesObject.Endereco", "Entrega", b1 =>
                         {
                             b1.Property<Guid>("VendaId")
                                 .HasColumnType("uniqueidentifier");

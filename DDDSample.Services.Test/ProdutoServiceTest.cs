@@ -1,4 +1,4 @@
-using DDDSample.Domain.Vendas.Entities;
+using DDDSample.Domain.Entities;
 using NUnit.Framework;
 
 namespace DDDSample.Services.Test

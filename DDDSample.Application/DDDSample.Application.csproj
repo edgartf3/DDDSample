@@ -12,6 +12,7 @@
     <ProjectReference Include="..\DDDSample.Application.Core\DDDSample.Application.Core.csproj" />
     <ProjectReference Include="..\DDDSample.Domain.Core\DDDSample.Domain.Core.csproj" />
     <ProjectReference Include="..\DDDSample.Domain.Venda\DDDSample.Domain.csproj" />
+    <ProjectReference Include="..\DDDSample.Framework.DataBase\DDDSample.Framework.DataBase.csproj" />
   </ItemGroup>
 
 </Project>

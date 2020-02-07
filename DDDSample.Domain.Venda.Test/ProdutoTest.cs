@@ -1,6 +1,4 @@
-using DDDSample.Domain.Core;
-using DDDSample.Domain.Vendas.Entities;
-using DDDSample.Framework.DataBase;
+using DDDSample.Domain.Entities;
 using NUnit.Framework;
 
 namespace DDDSample.Domain.Vendas.Test

@@ -1,4 +1,4 @@
-﻿using DDDSample.Application.Core.Interfaces;
+﻿using DDDSample.Application.Core;
 using DDDSample.Domain.Core.Entities;
 using DDDSample.Domain.Core.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
@@ -21,7 +21,7 @@ namespace DDDSample.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll([FromServices] IBaseServiceApp<T> service)
+        public async Task<IActionResult> GetAll([FromServices] IBaseService<T> service)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -39,7 +39,7 @@ namespace DDDSample.WebApi.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<IActionResult> Get([FromServices] IBaseServiceApp<T> service, [FromRoute] Guid id)
+        public async Task<IActionResult> Get([FromServices] IBaseService<T> service, [FromRoute] Guid id)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -56,7 +56,7 @@ namespace DDDSample.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromServices] IBaseServiceApp<T> service, [FromBody] T entity)
+        public async Task<IActionResult> Create([FromServices] IBaseService<T> service, [FromBody] T entity)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -74,7 +74,7 @@ namespace DDDSample.WebApi.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public async Task<IActionResult> Update([FromServices] IBaseServiceApp<T> service, [FromRoute] Guid id, [FromBody] T model)
+        public async Task<IActionResult> Update([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] T model)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -94,7 +94,7 @@ namespace DDDSample.WebApi.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> DeleteId([FromServices] IBaseServiceApp<T> service, [FromRoute] Guid id)
+        public async Task<IActionResult> DeleteId([FromServices] IBaseService<T> service, [FromRoute] Guid id)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -113,7 +113,7 @@ namespace DDDSample.WebApi.Controllers
         
         [HttpPatch]        
         [Route("{id}")]
-        public async Task<IActionResult> Patch([FromServices] IBaseServiceApp<T> service, [FromRoute] Guid id, [FromBody] JsonPatchDocument<T> model)
+        public async Task<IActionResult> Patch([FromServices] IBaseService<T> service, [FromRoute] Guid id, [FromBody] JsonPatchDocument<T> model)
         {            
             var tsc = new TaskCompletionSource<IActionResult>();
             try

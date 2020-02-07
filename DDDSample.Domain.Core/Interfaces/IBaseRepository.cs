@@ -12,6 +12,7 @@ namespace DDDSample.Domain.Core.Interfaces
         void Delete(TEntity model);
         void Delete(Guid id);
         TEntity Get(Guid id);        
-        IEnumerable<TEntity> GetAll();
+        IEnumerable<TEntity> GetAll();  
+        
     }
 }

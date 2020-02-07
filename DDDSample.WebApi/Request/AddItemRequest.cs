@@ -10,5 +10,8 @@ namespace DDDSample.WebApi.Request
         public Guid VendaId { get; set; }
         public Guid ProdutoId { get; set; }
         public double Quantidade { get; set; }
+
+        public Guid ItemId { get; set; }
+        public double valor { get; set; }
     }
 }

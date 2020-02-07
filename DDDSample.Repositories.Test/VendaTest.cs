@@ -36,7 +36,7 @@ namespace DDDSample.Repositories.Test
         public void IncluirVenda()
         {
             var venda = new Venda();
-            venda.AdicionarItem(produto.Id, 2);
+            
             _repository.Create(venda);
         }
     }

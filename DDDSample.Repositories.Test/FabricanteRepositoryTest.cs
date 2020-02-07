@@ -1,9 +1,8 @@
-﻿using DDDSample.Domain.Vendas.Entities;
+﻿
+using DDDSample.Domain.Entities;
 using DDDSample.Framework.DataBase;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DDDSample.Repositories.Test
 {

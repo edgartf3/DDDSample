@@ -90,7 +90,7 @@ namespace DDDSample.Framework.DataBase
         {
             this.ApplyConfig(model);
             _dbSet.Update(model);          
-            _context.SaveChangesAsync().Wait();
+            //_context.SaveChangesAsync().Wait();
         }
 
         private void ApplyConfig(TEntity model)

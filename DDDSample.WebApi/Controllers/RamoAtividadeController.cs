@@ -1,9 +1,5 @@
-﻿using DDDSample.Application.Core.Interfaces;
-using DDDSample.Application.ViewsModels;
-using DDDSample.Domain.Entities;
+﻿using DDDSample.Application.ViewsModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
 
 namespace DDDSample.WebApi.Controllers
 {
