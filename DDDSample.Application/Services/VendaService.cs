@@ -1,5 +1,7 @@
-﻿using DDDSample.Application.Core;
+﻿using AutoMapper;
+using DDDSample.Application.Core;
 using DDDSample.Application.Services.Interfaces;
+using DDDSample.Application.ViewsModels;
 using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Entities;
 using DDDSample.Domain.Interfaces.Services;
@@ -9,7 +11,7 @@ using System;
 
 namespace DDDSample.Application.Services
 {
-    public class VendaService : BaseService<Venda, Venda>, IVendaService
+    public class VendaService : BaseService<VendaViewModel, Venda>, IVendaService
     {
         private IVendaHandler _vendaHandler;       
         
@@ -30,9 +32,12 @@ namespace DDDSample.Application.Services
             _uow.Commit();
         }
 
-        public Venda NovaVenda()
+        public VendaViewModel NovaVenda()
         {
-            var result = _vendaHandler.NovaVenda();
+            var domainVenda = _vendaHandler.NovaVenda();
+
+            var result = Mapper.Map<Venda, VendaViewModel>(domainVenda);
+
             _uow.Commit();
             return result;
         }

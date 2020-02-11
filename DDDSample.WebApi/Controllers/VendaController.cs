@@ -1,9 +1,11 @@
 ﻿using DDDSample.Application.Services;
 using DDDSample.Application.Services.Interfaces;
+using DDDSample.Application.ViewsModels;
 using DDDSample.Domain.Entities;
 using DDDSample.Domain.Interfaces.Services;
 using DDDSample.WebApi.Helpers;
 using DDDSample.WebApi.Request;
+using DDDSample.WebApi.Requests.Vendas;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -12,11 +14,11 @@ namespace DDDSample.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VendaController : ControllerBase
+    public class VendaController : BaseController<VendaViewModel>
     {
         [HttpPost]
         [Route("AdicionarItem")]
-        public async Task<IActionResult> AdicionarItem([FromServices] IVendaService service, [FromBody] AddItemRequest req)
+        public async Task<IActionResult> AdicionarItem([FromServices] IVendaService service, [FromBody] AdicionarItemRequest req)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -35,7 +37,7 @@ namespace DDDSample.WebApi.Controllers
 
         [HttpPost]
         [Route("RemoverItem")]
-        public async Task<IActionResult> removerItem([FromServices] IVendaService service, [FromBody] AddItemRequest req)
+        public async Task<IActionResult> removerItem([FromServices] IVendaService service, [FromBody] RemoverItemRequest req)
         {
 
             var tsc = new TaskCompletionSource<IActionResult>();
@@ -55,12 +57,14 @@ namespace DDDSample.WebApi.Controllers
 
         [HttpPost]
         [Route("Desconto")]
-        public async Task<IActionResult> Desconto([FromServices] IVendaService service, [FromBody] AddItemRequest req)
+        public async Task<IActionResult> Desconto([FromServices] IVendaService service, [FromBody] DescontoRequest req)
         {
             var tsc = new TaskCompletionSource<IActionResult>();
             try
             {
-                service.DarDesconto(req.VendaId, req.valor);
+                service.DarDesconto(req.VendaId, req.Valor);
+
+                
                 tsc.SetResult(RetornoHelper.CreateResponse("OK", 200));
             }
             catch (Exception e)

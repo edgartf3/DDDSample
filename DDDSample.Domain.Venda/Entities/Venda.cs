@@ -35,7 +35,7 @@ namespace DDDSample.Domain.Entities
         public double ValorDesconto { get; set; }
         public double ValorTotal { get; set; }
         public IReadOnlyCollection<Item> Itens { get { return _Itens.ToArray(); } }
-        //public Endereco Entrega { get; set; }
+        
 
 
         public void AdicionarItem(Item item)

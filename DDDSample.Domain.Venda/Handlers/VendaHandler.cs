@@ -79,7 +79,6 @@ namespace DDDSample.Domain.Services
             }
 
             
-
             _baseRepository.Update(venda);
             
         }
