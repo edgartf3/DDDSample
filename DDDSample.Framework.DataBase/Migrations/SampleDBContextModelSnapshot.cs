@@ -259,7 +259,7 @@ namespace DDDSample.Framework.DataBase.Migrations
 
             modelBuilder.Entity("DDDSample.Domain.Entities.Dependente", b =>
                 {
-                    b.HasOne("DDDSample.Domain.Entities.Pessoa", null)
+                    b.HasOne("DDDSample.Domain.Entities.Pessoa", "Pessoa")
                         .WithMany("Dependentes")
                         .HasForeignKey("PessoaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -305,6 +305,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                             b1.Property<string>("Complemento")
                                 .HasColumnType("nvarchar(max)");
 
+                            b1.Property<int>("IBGE")
+                                .HasColumnType("int");
+
                             b1.Property<string>("Logradouro")
                                 .HasColumnType("nvarchar(max)");
 
@@ -316,9 +319,9 @@ namespace DDDSample.Framework.DataBase.Migrations
 
                             b1.HasKey("PessoaId");
 
-                            b1.ToTable("Pessoas");
+                            b1.ToTable("Pessoa_Endereco_Entrega");
 
-                            b1.WithOwner()
+                            b1.WithOwner("Pessoa")
                                 .HasForeignKey("PessoaId");
                         });
 
@@ -339,6 +342,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                             b1.Property<string>("Complemento")
                                 .HasColumnType("nvarchar(max)");
 
+                            b1.Property<int>("IBGE")
+                                .HasColumnType("int");
+
                             b1.Property<string>("Logradouro")
                                 .HasColumnType("nvarchar(max)");
 
@@ -350,9 +356,9 @@ namespace DDDSample.Framework.DataBase.Migrations
 
                             b1.HasKey("PessoaId");
 
-                            b1.ToTable("Pessoas");
+                            b1.ToTable("Pessoa_Endereco_Faturamento");
 
-                            b1.WithOwner()
+                            b1.WithOwner("Pessoa")
                                 .HasForeignKey("PessoaId");
                         });
                 });
@@ -377,40 +383,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasForeignKey("VendedorId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.OwnsOne("DDDSample.Domain.ValuesObject.Endereco", "Entrega", b1 =>
-                        {
-                            b1.Property<Guid>("VendaId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Bairro")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("CEP")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Cidade")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Complemento")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Logradouro")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Numero")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("UF")
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("VendaId");
-
-                            b1.ToTable("Vendas");
-
-                            b1.WithOwner()
-                                .HasForeignKey("VendaId");
-                        });
                 });
 #pragma warning restore 612, 618
         }

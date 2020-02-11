@@ -20,18 +20,22 @@ namespace DDDSample.Domain.Entities
             this.Numero = 256;            
         }
         public int Numero { get; private set; }
-        public DateTime Data { get; set; }                
-        public Pessoa Cliente { get; set; }
+        public DateTime Data { get; set; }
+
+        [NotPersist]
+        public virtual Pessoa Cliente { get; set; }
+        public Guid? ClienteId { get; set; }
 
         [NotPersist]
         public virtual Vendedor Vendedor { get; set; }
+        
         public Guid VendedorId { get; set; }
 
         public double ValorMercadoria { get; set; }
         public double ValorDesconto { get; set; }
         public double ValorTotal { get; set; }
         public IReadOnlyCollection<Item> Itens { get { return _Itens.ToArray(); } }
-        public Endereco Entrega { get; set; }
+        //public Endereco Entrega { get; set; }
 
 
         public void AdicionarItem(Item item)

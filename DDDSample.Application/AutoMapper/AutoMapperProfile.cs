@@ -10,6 +10,7 @@ namespace DDDSample.Application.AutoMapper
         {
             CreateMap<RamoAtividade, RamoAtividadeViewModel>().ReverseMap();
             CreateMap<Pessoa, PessoaViewModel>().ReverseMap();
+            CreateMap<Dependente, DependenteViewModel>().ReverseMap();
         }
     }
 }

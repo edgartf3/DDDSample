@@ -12,13 +12,16 @@ namespace DDDSample.Domain.Services
     public class VendaHandler : BaseHandler<Venda>, IVendaHandler
     {
         private IBaseRepository<Produto> _produtoRepository;
+        private IBaseRepository<Vendedor> _vendedorRepository;
 
 
         public VendaHandler(
             IBaseRepository<Venda> baseRepository,
+            IBaseRepository<Vendedor> vendedorRepository,
             IBaseRepository<Produto> produtoRepository) : base(baseRepository)
         {
             _produtoRepository = produtoRepository;
+            _vendedorRepository = vendedorRepository;
         }
 
         public void AdicionarItem(Guid vendaId, Guid produtoId, double quantidade)
@@ -87,6 +90,12 @@ namespace DDDSample.Domain.Services
 
             venda.Data = DateTime.Now;
 
+            venda.Vendedor = _vendedorRepository.GetAll().FirstOrDefault();
+            if (venda.Vendedor == null)
+            {
+                throw new Exception("Cadastre um vendedor");
+            }
+            venda.VendedorId = venda.Vendedor.Id;
             _baseRepository.Create(venda);
 
             return venda;

@@ -16,7 +16,9 @@ namespace DDDSample.Domain.Entities
         public string Nome { get; set; }
         public string CPF { get; set; }
 
-        [Cascade]
+        [NotPersist]
+        public virtual Pessoa Pessoa { get; set; }
+        
         public Guid PessoaId { get; set; }
 
     }

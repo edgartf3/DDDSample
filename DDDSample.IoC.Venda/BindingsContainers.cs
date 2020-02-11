@@ -27,7 +27,7 @@ namespace DDDSample.IoC
 
             services.AddScoped<IBaseHandler<Pessoa>, BaseHandler<Pessoa>>();
             services.AddScoped<IBaseRepository<Pessoa>, BaseRepository<Pessoa, SampleDBContext>>();
-            services.AddScoped<IBaseService<PessoaViewModel>, BaseService<PessoaViewModel, Pessoa>>();
+            services.AddScoped<IBaseService<Pessoa>, BaseService<Pessoa, Pessoa>>();
 
             services.AddScoped<IBaseHandler<Venda>, BaseHandler<Venda>>();
             services.AddScoped<IBaseRepository<Venda>, BaseRepository<Venda, SampleDBContext>>();

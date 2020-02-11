@@ -90,7 +90,7 @@ namespace DDDSample.Framework.DataBase
         {
             this.ApplyConfig(model);
             _dbSet.Update(model);          
-            //_context.SaveChangesAsync().Wait();
+            _context.SaveChangesAsync().Wait();
         }
 
         private void ApplyConfig(TEntity model)
@@ -102,6 +102,8 @@ namespace DDDSample.Framework.DataBase
                 //{
                 //    prop.SetValue(model, null);
                 //}
+
+               
                 var attributies = prop.GetCustomAttributes(true);
                 foreach (var attribute in attributies)
                 {

@@ -1,6 +1,9 @@
 ﻿using DDDSample.Domain.Entities;
+using DDDSample.Framework.DataBase.Mappings;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
+using System.Reflection;
 
 namespace DDDSample.Framework.DataBase
 {
@@ -14,12 +17,15 @@ namespace DDDSample.Framework.DataBase
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            
 
+
+            #region ajustando FKs            
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {                                     
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
 
-                
+                /*
                 if (relationship.Properties.Count != 0)
                 {
                     var prop = relationship.Properties[0];
@@ -36,15 +42,25 @@ namespace DDDSample.Framework.DataBase
                             }
                         }
                     }                                                                                   
-                }                              
-            }
+                } */
+            }            
+            #endregion
+
+
+                       
 
             
+            //Dynamic Mapping by Reflection
+            var typesToMapping = (from x in Assembly.GetExecutingAssembly().GetTypes()
+                                  where x.IsClass && typeof(IMapping).IsAssignableFrom(x)
+                                  select x).ToList();
 
-            //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>(); //Não fazer FKs nos relacinamentos 1-N com Delete Cascade habilitado *É Perigoso!!
-            //modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>(); //Não fazer FKs nos relacionamentos N-N com Delete Cascade Habilitado *É Perigoso!!
-
-
+            foreach (var mapping in typesToMapping)
+            {
+                IMapping mappingClass = Activator.CreateInstance(mapping) as IMapping;
+                mappingClass.OnModelCreating(modelBuilder);
+            }
+           
         }
 
         public DbSet<Produto> Produtos { get; set; }
