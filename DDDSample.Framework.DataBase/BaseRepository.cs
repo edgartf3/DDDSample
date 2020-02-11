@@ -24,15 +24,13 @@ namespace DDDSample.Framework.DataBase
         {
             this.ApplyConfig(model);
             model.CriadoEm = DateTime.Now;
-            _dbSet.Add(model);
-            _context.SaveChangesAsync().Wait();
+            _dbSet.Add(model);            
         }
 
         public void Delete(TEntity model)
         {
             this.ApplyConfig(model);
-            _dbSet.Remove(model);
-            _context.SaveChangesAsync().Wait();
+            _dbSet.Remove(model);            
         }
 
         public void Delete(Guid id)
@@ -40,7 +38,6 @@ namespace DDDSample.Framework.DataBase
             var model = this.Get(id);
             this.ApplyConfig(model);
             _dbSet.Remove(model);
-            _context.SaveChangesAsync().Wait();
         }
 
         public TEntity Get(Guid id)
@@ -89,8 +86,7 @@ namespace DDDSample.Framework.DataBase
         public void Update(TEntity model)
         {
             this.ApplyConfig(model);
-            _dbSet.Update(model);          
-            _context.SaveChangesAsync().Wait();
+            _dbSet.Update(model);                      
         }
 
         private void ApplyConfig(TEntity model)

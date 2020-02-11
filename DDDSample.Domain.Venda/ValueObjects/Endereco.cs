@@ -1,10 +1,6 @@
-﻿using DDDSample.Domain.Core.Entities;
-using DDDSample.Domain.Core.Interfaces;
-using DDDSample.Domain.Entities;
+﻿using DDDSample.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DDDSample.Domain.ValuesObject
 {

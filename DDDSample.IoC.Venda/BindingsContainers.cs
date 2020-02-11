@@ -8,6 +8,8 @@ using DDDSample.Domain.Entities;
 using DDDSample.Domain.Interfaces.Services;
 using DDDSample.Domain.Services;
 using DDDSample.Framework.DataBase;
+using DDDSample.Framework.DataBase.UoW;
+using DDDSample.Framework.DataBase.UoW.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,6 +22,7 @@ namespace DDDSample.IoC
         {
             services.AddDbContext<SampleDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("SampleConnection")));
             services.AddScoped<SampleDBContext, SampleDBContext>(); //Assim que acabar a requisão, acabar com a conexão com o banco de Dados
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<IBaseHandler<Produto>, BaseHandler<Produto>>();
             services.AddScoped<IBaseRepository<Produto>, BaseRepository<Produto, SampleDBContext>>();
