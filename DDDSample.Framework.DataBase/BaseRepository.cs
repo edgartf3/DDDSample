@@ -86,7 +86,8 @@ namespace DDDSample.Framework.DataBase
         public void Update(TEntity model)
         {
             this.ApplyConfig(model);
-            _dbSet.Update(model);                      
+            _dbSet.Update(model);
+           
         }
 
         private void ApplyConfig(TEntity model)
@@ -110,6 +111,11 @@ namespace DDDSample.Framework.DataBase
                 }
             }
             
+        }
+
+        public void ExecuteSql(string sql)
+        {
+            _context.Database.ExecuteSqlCommand(sql);
         }
     }
 }

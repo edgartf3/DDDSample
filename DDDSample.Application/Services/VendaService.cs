@@ -22,6 +22,7 @@ namespace DDDSample.Application.Services
         
         public void AdicionarItem(Guid VendaId, Guid produtoId, double quantidade)
         {
+            //_uow.BeginTransaction();            
             _vendaHandler.AdicionarItem(VendaId, produtoId, quantidade);
             _uow.Commit();
         }

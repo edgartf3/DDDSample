@@ -55,13 +55,12 @@ namespace DDDSample.Domain.Services
             venda.ValorDesconto += item.ValorDesconto;
 
             venda.CalcularTotais();
-
             
-
+            var sql = "Update Fabricantes Set Descricao = 'Raimundo 6' where Id = '26CA2C84-9C2E-4B0D-5165-08D7B0CEB838'";
+            _baseRepository.ExecuteSql(sql);
             _baseRepository.Update(venda);
 
-                      
-
+                     
         }
 
         public void DarDesconto(Guid vendaId, double desconto)

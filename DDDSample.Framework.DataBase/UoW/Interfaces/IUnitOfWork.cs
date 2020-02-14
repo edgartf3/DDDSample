@@ -6,6 +6,8 @@ namespace DDDSample.Framework.DataBase.UoW.Interfaces
 {
     public interface IUnitOfWork
     {
+        void BeginTransaction();
         void Commit();
+        void Rollback();
     }
 }

@@ -16,6 +16,8 @@ namespace DDDSample.Domain.Core
 
         public void Create(T model)
         {
+            var sql = "Update Fabricantes Set Descricao = 'Raimundo 7' where Id = '26CA2C84-9C2E-4B0D-5165-08D7B0CEB838'";
+            _baseRepository.ExecuteSql(sql);
             this._baseRepository.Create(model);
         }
 

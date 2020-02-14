@@ -24,10 +24,19 @@ namespace DDDSample.Application.Core
         }
         public void Create(TViewModel model)
         {
-            var entity = Mapper.Map<TViewModel, TBaseModel>(model);
-            _service.Create(entity);
-            _uow.Commit();
-            
+            _uow.BeginTransaction();
+            try
+            {
+                var entity = Mapper.Map<TViewModel, TBaseModel>(model);
+                _service.Create(entity);
+                _uow.Commit();
+            }
+            catch(Exception e)
+            {
+                _uow.Rollback();
+                throw e;
+            }
+                       
         }
 
         public void Delete(TViewModel model)
