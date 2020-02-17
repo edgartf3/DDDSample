@@ -8,7 +8,7 @@ using System.Text;
 namespace DDDSample.Repositories.Test
 {
     [Order(0)]
-    public class BancoDados
+    public class CriarBancoDados
     {
         private SampleDBContext _context;
         [SetUp]
@@ -23,7 +23,5 @@ namespace DDDSample.Repositories.Test
         {
             _context.Database.Migrate();
         }
-
-
     }
 }
