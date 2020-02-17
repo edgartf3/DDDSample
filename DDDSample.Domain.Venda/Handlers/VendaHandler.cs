@@ -33,10 +33,10 @@ namespace DDDSample.Domain.Services
                 throw new Exception("Produto não existe");
             }
 
-            if (produto.Ativo == false)
-            {
-                throw new Exception("Produto está inativo");
-            }
+            //if (produto.Ativo == false)
+            //{
+            //    throw new Exception("Produto está inativo");
+            //}
 
 
             var venda = _baseRepository.Get(vendaId);            

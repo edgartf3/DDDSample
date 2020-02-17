@@ -26,6 +26,6 @@ namespace DDDSample.Domain.Entities
         
         public string Descricao { get; set; }
 
-
+        
     }
 }

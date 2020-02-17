@@ -14,14 +14,13 @@ namespace DDDSample.Domain.Entities
         public Produto(string descricao, double preco)
         {
             Descricao = descricao;
-            Preco = preco;
-            Ativo = true;
+            Preco = preco;            
         }
 
         public string Descricao { get; set; }
         public double Preco { get; set; }
 
-        public bool Ativo { get; set; }
+       
 
         public Guid? FabricanteId { get; set; }
         public virtual Fabricante Fabricante { get; set; }

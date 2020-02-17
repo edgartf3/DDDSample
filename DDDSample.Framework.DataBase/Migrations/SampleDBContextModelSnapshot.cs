@@ -44,6 +44,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<string>("CPF")
                         .HasColumnType("nvarchar(max)");
 
@@ -69,6 +72,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
 
@@ -85,6 +91,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
@@ -124,6 +133,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Cpf_CNPJ")
                         .HasColumnType("nvarchar(max)");
@@ -178,6 +190,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
 
@@ -194,6 +209,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<Guid?>("ClienteId")
                         .HasColumnType("uniqueidentifier");
@@ -233,6 +251,9 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");

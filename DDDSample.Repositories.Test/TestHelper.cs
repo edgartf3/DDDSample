@@ -10,11 +10,8 @@ namespace DDDSample.Repositories.Test
     public class TestHelper
     {
         public static BaseRepository<T, SampleDBContext> CriarRepositorio<T>(SampleDBContext context) where T:EntidadeBase
-        {
-            
-
+        {            
             return new BaseRepository<T, SampleDBContext>(context);
-
         }
 
         public static SampleDBContext GetContexto()
@@ -27,7 +24,7 @@ namespace DDDSample.Repositories.Test
 
 
             var _context = new SampleDBContext(options);
-            _context.Database.Migrate();
+            
 
             return _context;
 
