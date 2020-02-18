@@ -20,7 +20,7 @@ namespace DDDSample.Repositories.Test
         [Order(0)]
         public void Finaliza()
         {
-            _context.Database.EnsureDeleted();
+            //_context.Database.EnsureDeleted();
         }
     }
 }

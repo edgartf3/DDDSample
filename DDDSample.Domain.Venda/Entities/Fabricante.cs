@@ -26,6 +26,7 @@ namespace DDDSample.Domain.Entities
         
         public string Descricao { get; set; }
 
-        
+        public string CNPJ { get; set; }
+
     }
 }

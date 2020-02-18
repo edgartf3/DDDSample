@@ -75,13 +75,22 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
+                    b.Property<string>("CNPJ")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Descricao")
+                        .IsUnique()
+                        .HasName("unqFabricanteDescricao");
 
                     b.ToTable("Fabricantes");
                 });
@@ -138,7 +147,7 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("Cpf_CNPJ")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
@@ -150,6 +159,11 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Cpf_CNPJ")
+                        .IsUnique()
+                        .HasName("unqPessoaCpf_Cnpj")
+                        .HasFilter("[Cpf_CNPJ] IS NOT NULL");
 
                     b.HasIndex("RamoAtividadeId");
 
@@ -169,7 +183,8 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<Guid?>("FabricanteId")
                         .HasColumnType("uniqueidentifier");
@@ -178,6 +193,10 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Descricao")
+                        .IsUnique()
+                        .HasName("unqProdutoDescricao");
 
                     b.HasIndex("FabricanteId");
 
@@ -197,9 +216,14 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Descricao")
+                        .IsUnique()
+                        .HasName("unqRamoAtividadeDescricao");
 
                     b.ToTable("RamosAtividade");
                 });

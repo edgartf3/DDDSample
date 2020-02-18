@@ -13,7 +13,7 @@ namespace DDDSample.Framework.DataBase.Mappings
         {
             base.OnModelCreating(modelBuilder);
 
-            
+            entity.HasIndex(a => a.Cpf_CNPJ).HasName("unqPessoaCpf_Cnpj").IsUnique();
 
             entity.OwnsOne(p => p.Entrega)
                .ToTable("Pessoa_Endereco_Entrega")
