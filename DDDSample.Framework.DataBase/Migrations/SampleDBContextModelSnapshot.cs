@@ -75,10 +75,6 @@ namespace DDDSample.Framework.DataBase.Migrations
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<string>("CNPJ")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<DateTime?>("CriadoEm")
                         .HasColumnType("datetime2");
 
@@ -244,10 +240,12 @@ namespace DDDSample.Framework.DataBase.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("Date");
 
                     b.Property<int>("Numero")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<double>("ValorDesconto")
                         .HasColumnType("float");

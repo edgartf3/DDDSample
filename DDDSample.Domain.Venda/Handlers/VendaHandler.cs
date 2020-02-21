@@ -85,14 +85,13 @@ namespace DDDSample.Domain.Services
         public Venda NovaVenda()
         {
             var venda = new Venda();
-
-            venda.Data = DateTime.Now;
-
+            
             venda.Vendedor = _vendedorRepository.GetAll().FirstOrDefault();
             if (venda.Vendedor == null)
             {
                 throw new Exception("Cadastre um vendedor");
             }
+            
             venda.VendedorId = venda.Vendedor.Id;
             _baseRepository.Create(venda);
 

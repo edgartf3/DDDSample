@@ -414,6 +414,8 @@ D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSa
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.WebApi.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DDDSample.WebApi.pdb
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\AutoMapper.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Dapper.dll
+D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\DapperExtensions.DotnetCore.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Sistemas\Laboratorio\DDDSample\DDDSample.WebApi\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll

@@ -10,9 +10,7 @@ namespace DDDSample.Framework.DataBase.Mappings
     {
         public override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            entity.Property(a => a.CNPJ).IsRequired();
+            base.OnModelCreating(modelBuilder);            
             entity.Property(a => a.Descricao).IsRequired();
             entity.HasIndex(a => a.Descricao).HasName("unqFabricanteDescricao").IsUnique();
         }

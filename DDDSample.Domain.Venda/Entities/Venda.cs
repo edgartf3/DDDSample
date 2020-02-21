@@ -4,6 +4,7 @@ using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.ValuesObject;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
 namespace DDDSample.Domain.Entities
@@ -15,10 +16,10 @@ namespace DDDSample.Domain.Entities
 
         public Venda()
         {
-            
             this._Itens = new HashSet<Item>();
-            this.Numero = 256;            
+            this.Data = DateTime.Now;
         }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Numero { get; private set; }
         public DateTime Data { get; set; }
 

@@ -14,5 +14,8 @@ namespace DDDSample.Domain.Core.Interfaces
         TEntity Get(Guid id);        
         IEnumerable<TEntity> GetAll();
         void ExecuteSql(string sql);
+       
+        IEnumerable<dynamic> Query(string sql);
+
     }
 }

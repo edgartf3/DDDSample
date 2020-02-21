@@ -115,7 +115,12 @@ namespace DDDSample.Framework.DataBase
 
         public void ExecuteSql(string sql)
         {
-            _context.Database.ExecuteSqlCommand(sql);
+           // _context.Database.ExecuteSqlCommand(sql);
+        }
+
+        public IEnumerable<dynamic> Query(string sql)
+        {
+            return _dbSet.FromSqlRaw(sql).ToList();
         }
     }
 }

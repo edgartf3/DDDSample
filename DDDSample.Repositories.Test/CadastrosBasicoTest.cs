@@ -1,6 +1,8 @@
 ﻿using DDDSample.Domain.Core.Interfaces;
 using DDDSample.Domain.Entities;
+using DDDSample.Domain.Handlers;
 using DDDSample.Framework.DataBase;
+using DDDSample.Framework.DataBase.Helpers;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -48,7 +50,8 @@ namespace DDDSample.Repositories.Test
             var id = Guid.Parse("431424A3-5734-412F-8DFC-E6A906F19AD8");
             _fabricanteRepository.Create(new Fabricante("Nestles", id));
             _fabricanteRepository.Create(new Fabricante("Bauduco", Guid.Parse("083AE12D-C6AF-49D0-92F9-A54C89A9C307")));
-            _fabricanteRepository.Create(new Fabricante("Perdigão", Guid.Parse("B6C120D4-E5FF-48B9-BC1B-438DF2360D63")));
+            var perdigao = new Fabricante("Perdigão", Guid.Parse("B6C120D4-E5FF-48B9-BC1B-438DF2360D63"));            
+            _fabricanteRepository.Create(perdigao);
             _context.SaveChanges();
 
             var count = _fabricanteRepository.GetAll().Count();
@@ -161,6 +164,39 @@ namespace DDDSample.Repositories.Test
             _ramoRepository.Create(new RamoAtividade("Galeria"));
             _ramoRepository.Create(new RamoAtividade("Manutenção"));
             _context.SaveChanges();            
+        }
+
+        [Test]
+        [Order(30)]
+        public void InserirProdutos_Repository()
+        {
+            var produto = new Produto()
+            {
+                Descricao = "Mouse",
+                FabricanteId = Guid.Parse("431424A3-5734-412F-8DFC-E6A906F19AD8"),
+                Preco = 1                
+            };
+
+            _produtoRepository.Create(produto);
+            _context.SaveChanges();
+            Assert.IsTrue(true);
+        }
+
+        [Test]
+        [Order(31)]
+        public void InserirProdutos_Handler()
+        {
+            var produto = new Produto()
+            {
+                Descricao = "Teclado",
+                FabricanteId = Guid.Parse("431424A3-5734-412F-8DFC-E6A906F19AD8"),
+                Preco = 2
+            };
+
+            new ProdutoHandler(_produtoRepository, new SqlHelper(_context)).Create(produto);
+
+            //_context.SaveChanges();
+            Assert.IsTrue(true);
         }
     }
 }

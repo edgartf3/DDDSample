@@ -8,6 +8,7 @@ namespace DDDSample.Domain.Entities
     {
         public Produto()
         {
+            
 
         }
 
