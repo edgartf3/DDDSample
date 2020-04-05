@@ -193,10 +193,42 @@ namespace DDDSample.Repositories.Test
                 Preco = 2
             };
 
-            new ProdutoHandler(_produtoRepository, new SqlHelper(_context)).Create(produto);
+            var produtoHandler = new ProdutoHandler(_produtoRepository, new SqlHelper(_context));
+            try
+            {
+                produtoHandler.Create(produto);
+                Assert.Fail();
+            }
+            catch(Exception) { }
 
-            //_context.SaveChanges();
+            var produto2 = new Produto()
+            {
+                Id = Guid.Parse("0CCB09A2-297A-4587-906D-9BC4416BA7C8"),
+                Descricao = "Panetone",
+                FabricanteId = Guid.Parse("083AE12D-C6AF-49D0-92F9-A54C89A9C307"),
+                Preco = 0
+            };
+
+            try
+            {
+                produtoHandler.Create(produto2);
+                Assert.Fail();
+            }
+            catch(Exception) { }
+
+            produto2.Preco = 12.90;
+
+            produtoHandler.Create(produto2);
+            _context.SaveChanges();
             Assert.IsTrue(true);
+        }        
+
+
+        [Test]
+        [Order(32)]
+        public void InserirProdutos()
+        {
+
         }
     }
 }

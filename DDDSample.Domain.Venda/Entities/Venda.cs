@@ -1,7 +1,5 @@
 ﻿using DDDSample.Domain.Core.Attributes;
 using DDDSample.Domain.Core.Entities;
-using DDDSample.Domain.Core.Interfaces;
-using DDDSample.Domain.ValuesObject;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;

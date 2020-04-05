@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace DDDSample.Framework.DataBase.Mappings
@@ -13,6 +14,7 @@ namespace DDDSample.Framework.DataBase.Mappings
             base.OnModelCreating(modelBuilder);
         
             entity.Property(a => a.Data).IsRequired().HasColumnType("Date");
+            entity.Property(a => a.Numero).ValueGeneratedOnAdd();
         }
     }
 }

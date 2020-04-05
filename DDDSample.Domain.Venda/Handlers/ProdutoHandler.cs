@@ -27,6 +27,11 @@ namespace DDDSample.Domain.Handlers
 
             //1-  perguntar se o fabricante é ativo
             var fabricante = _sqlHelper.Get<Fabricante>(produto.FabricanteId.Value, new string[] { "Ativo", "Descricao" });
+            if (fabricante == null)
+            {
+                throw new Exception("Fabricante não localizado");
+            }
+
             if (!fabricante.Ativo)
             {
                 throw new Exception("Fabricante inativo");

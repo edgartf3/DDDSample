@@ -14,7 +14,7 @@ namespace DDDSample.Framework.DataBase.Mappings
         public virtual void OnModelCreating(ModelBuilder modelBuilder)
         {
             this.entity = modelBuilder.Entity<TEntity>();
-            entity.HasKey(t => t.Id);
+            entity.HasKey(t => t.Id);            
         }
     }
 }

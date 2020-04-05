@@ -20,6 +20,7 @@ namespace DDDSample.Framework.DataBase
             _dbSet = dbContext.Set<TEntity>();
 
         }
+
         public void Create(TEntity model)
         {
             this.ApplyConfig(model);
